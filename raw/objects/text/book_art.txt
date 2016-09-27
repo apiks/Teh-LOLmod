@@ -18,10 +18,3 @@ We See [NAME]
 And [ANY_PRONOUN] Sang '[NAME]!'
 [NO_ART_NAME] for dummies
 The noob's guide to [NO_ART_NAME]
-[NO_ART_NAME], [NO_ART_NAME] & [ADJ] [NO_ART_NAME]'s [NAME]
-Holy [NO_ART_NAME]!
-I killed the [ANY_PRONOUN]
-The three [ADJ]
-[PHRASE] & [PHRASE]
-[ANY_PRONOUN]s guide for [NO_ART_NAME]
-[ANY_PRONOUN] says [NO_ART_NAME]
