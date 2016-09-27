@@ -1,0 +1,2200 @@
+creature_politics
+
+[OBJECT:CREATURE]
+
+[CREATURE:POLITICS]
+	[DESCRIPTION:A medium-sized creature prone to great ambition.]
+	[NAME:politician:politicians:politician]
+	[OUTSIDER_CONTROLLABLE]
+
+	[INTELLIGENT]
+	[CANOPENDOORS]
+	[BENIGN]   [NATURAL_SKILL:DODGING:7]
+
+	[PREFSTRING:suits][GENERAL_CHILD_NAME:spawn:spawn] 
+	
+	[PROFESSION_NAME:BOWMAN:fundraiser:fundraisers]
+	[PROFESSION_NAME:MASTER_BOWMAN:Elite Fundraiser:Elite Fundraiser]
+	[PROFESSION_NAME:PIKEMAN:flag waver:flag wavers]
+	[PROFESSION_NAME:MASTER_PIKEMAN:Elite Flag waver:Elite Flag wavers]
+	[USE_MATERIAL_TEMPLATE:SINEW:SINEW_TEMPLATE]
+	[TENDONS:LOCAL_CREATURE_MAT:SINEW:200]
+	[LIGAMENTS:LOCAL_CREATURE_MAT:SINEW:200]
+	[HAS_NERVES]
+	[USE_MATERIAL_TEMPLATE:BLOOD:BLOOD_TEMPLATE]
+	[BLOOD:LOCAL_CREATURE_MAT:BLOOD:LIQUID]
+	[CREATURE_CLASS:GENERAL_POISON]
+	[GETS_WOUND_INFECTIONS]
+	[GETS_INFECTIONS_FROM_ROT]
+	[USE_MATERIAL_TEMPLATE:PUS:PUS_TEMPLATE]
+	[PUS:LOCAL_CREATURE_MAT:PUS:LIQUID]
+	[USE_MATERIAL_TEMPLATE:SWEAT:SWEAT_TEMPLATE]
+	[USE_MATERIAL_TEMPLATE:TEARS:TEARS_TEMPLATE]
+	[USE_MATERIAL_TEMPLATE:SPIT:SPIT_TEMPLATE]
+	[SECRETION:LOCAL_CREATURE_MAT:SWEAT:LIQUID:BY_CATEGORY:ALL:SKIN:EXERTION]
+	[SECRETION:LOCAL_CREATURE_MAT:TEARS:LIQUID:BY_CATEGORY:EYE:ALL:EXTREME_EMOTION]
+	[CAN_DO_INTERACTION:MATERIAL_EMISSION]
+		[CDI:ADV_NAME:Spit]
+		[CDI:USAGE_HINT:NEGATIVE_SOCIAL_RESPONSE]
+		[CDI:USAGE_HINT:TORMENT]
+		[CDI:BP_REQUIRED:BY_CATEGORY:MOUTH]
+		[CDI:MATERIAL:LOCAL_CREATURE_MAT:SPIT:LIQUID_GLOB]
+		[CDI:VERB:spit:spits:NA]
+		[CDI:TARGET:C:LINE_OF_SIGHT]
+		[CDI:TARGET_RANGE:C:15]
+		[CDI:MAX_TARGET_NUMBER:C:1]
+		[CDI:WAIT_PERIOD:30]
+	[BODY_SIZE:0:0:4000]
+	[BODY_SIZE:1:168:17500]
+	[BODY_SIZE:12:0:70000]
+
+	[MAXAGE:60:120]
+	
+	[BABY:1]
+	[CHILD:12]
+	[EQUIPS]
+	[DIURNAL]
+	[SMELL_TRIGGER:90]
+	[HOMEOTHERM:10067]
+	[APPLY_CREATURE_VARIATION:STANDARD_BIPED_GAITS:900:675:450:225:1900:2900] 39 kph
+	[APPLY_CREATURE_VARIATION:STANDARD_CLIMBING_GAITS:6561:6115:5683:1755:7456:8567] 5 kph, NO DATA
+	[APPLY_CREATURE_VARIATION:STANDARD_SWIMMING_GAITS:5341:4723:4112:1254:6433:7900] 7 kph
+	[APPLY_CREATURE_VARIATION:STANDARD_CRAWLING_GAITS:2990:2257:1525:731:4300:6100] 12 kph, NO DATA
+	[SWIMS_LEARNED]
+	[MANNERISM_FINGERS:finger:fingers]
+	[MANNERISM_NOSE:nose]
+	[MANNERISM_EAR:ear]
+	[MANNERISM_HEAD:head]
+	[MANNERISM_EYES:eyes]
+	[MANNERISM_MOUTH:mouth]
+	[MANNERISM_HAIR:hair]
+	[MANNERISM_KNUCKLES:knuckles]
+	[MANNERISM_LIPS:lips]
+	[MANNERISM_CHEEK:cheek]
+	[MANNERISM_NAILS:nails]
+	[MANNERISM_FEET:feet]
+	[MANNERISM_ARMS:arms]
+	[MANNERISM_HANDS:hands]
+	[MANNERISM_TONGUE:tongue]
+	[MANNERISM_LEG:leg]
+	[MANNERISM_LAUGH]
+	[MANNERISM_SMILE]
+	[MANNERISM_WALK]
+	[MANNERISM_SIT]
+	[MANNERISM_BREATH]
+	[MANNERISM_POSTURE]
+	[MANNERISM_STRETCH]
+	[MANNERISM_EYELIDS]
+	[SPOUSE_CONVERSION_TARGET]
+	[MUNDANE]BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS Disabling this to use on other politicians later.	[BODY_DETAIL_PLAN:STANDARD_MATERIALS]
+	[BODY_DETAIL_PLAN:STANDARD_TISSUES]
+	[BODY_DETAIL_PLAN:GEAR_MATERIALS]
+	[BODY_DETAIL_PLAN:GEAR_TISSUES]
+	
+----------------BEGIN CASTES HERE--------------------------------
+[CASTE:HILLARY]
+		[FEMALE]
+[CASTE_NAME:Hillary Clinton:Hillary Clintons:Clinton]
+[DESCRIPTION:The politician Hillary Clinton has come! Beware its deadly email!]	[CASTE_TILE:'H'][CASTE_COLOR:3:0:1]
+
+		[MULTIPLE_LITTER_RARE]
+
+[BODY:HUMANOID_NECK:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:HUMANOID_JOINTS:THROAT:NECK:SPINE:BRAIN:SKULL:5FINGERS:5TOES:MOUTH:TONGUE:FACIAL_FEATURES:TEETH:RIBCAGE]
+	
+		1.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "If I want to knock a story off the front page, I just change my hairstyle.":says "If I want to knock a story off the front page, I just change my hairstyle.":someone say "If I want to knock a story off the front page, I just change my hairstyle."]
+
+2.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I suppose I could have stayed home and baked cookies and had teas.":says "I suppose I could have stayed home and baked cookies and had teas.":someone say "I suppose I could have stayed home and baked cookies and had teas."]
+
+3.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I always run inclusive and successful organisations.":says "I always run inclusive and successful organisations.":someone say "I always run inclusive and successful organisations."]
+
+4.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "In the Bible it says they asked Jesus how many times you should forgive, and he said 70 times 7. Well, I want you all to know that I'm keeping a chart.":says "In the Bible it says they asked Jesus how many times you should forgive, and he said 70 times 7. Well, I want you all to know that I'm keeping a chart.":someone say "In the Bible it says they asked Jesus how many times you should forgive, and he said 70 times 7. Well, I want you all to know that I'm keeping a chart."]
+
+5.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "America isn’t afraid to compete.":says "America isn’t afraid to compete.":someone say "America isn’t afraid to compete."]
+
+6.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "My dad used to say, if it sounds too good to be true, it probably is.":says "My dad used to say, if it sounds too good to be true, it probably is.":someone say "My dad used to say, if it sounds too good to be true, it probably is."]
+
+7.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "None of us can be satisfied with the status quo. Not by a long shot.":says "None of us can be satisfied with the status quo. Not by a long shot.":someone say "None of us can be satisfied with the status quo. Not by a long shot."]
+
+8.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Americans don't say: “I alone can fix it.” We say: “We'll fix it together.”":says "Americans don't say: “I alone can fix it.” We say: “We'll fix it together.”":someone say "Americans don't say: “I alone can fix it.” We say: “We'll fix it together.”"]
+
+9.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Every kid with a disability has the right to go to school.":says "Every kid with a disability has the right to go to school.":someone say "Every kid with a disability has the right to go to school."]
+
+10.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Americans are willing to work and work hard.":says "Americans are willing to work and work hard.":someone say "Americans are willing to work and work hard."]
+
+1.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "My job titles only tell you what I've done. They don't tell you why.":says "My job titles only tell you what I've done. They don't tell you why.":someone say "My job titles only tell you what I've done. They don't tell you why."]
+
+2.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I'm undaunted in my quest to amuse myself by constantly changing my hair.":says "I'm undaunted in my quest to amuse myself by constantly changing my hair.":someone say "I'm undaunted in my quest to amuse myself by constantly changing my hair."]
+
+3.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "You know, to just be grossly generalistic, you could put half of Trump's supporters into what I call the basket of deplorables.":says "You know, to just be grossly generalistic, you could put half of Trump's supporters into what I call the basket of deplorables.":someone say "You know, to just be grossly generalistic, you could put half of Trump's supporters into what I call the basket of deplorables."]
+
+4.   [SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "The truth is that sometimes it is hard even for me to recognize the Hillary Clinton that other people see.":says "The truth is that sometimes it is hard even for me to recognize the Hillary Clinton that other people see.":someone say "The truth is that sometimes it is hard even for me to recognize the Hillary Clinton that other people see."]
+
+5.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "When women participate in peace-making and peace-keeping, we are all safer and more secure.":says "When women participate in peace-making and peace-keeping, we are all safer and more secure.":someone say "When women participate in peace-making and peace-keeping, we are all safer and more secure."]
+
+6. 	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "You show people what you're willing to fight for when you fight your friends.":says "You show people what you're willing to fight for when you fight your friends.":someone say "You show people what you're willing to fight for when you fight your friends."]
+
+7.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Probably my worst quality is that I get very passionate about what I think is right.":says "Probably my worst quality is that I get very passionate about what I think is right.":someone say "Probably my worst quality is that I get very passionate about what I think is right."]
+
+8.   [SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I can't stand whining.":says "I can't stand whining.":someone say "I can't stand whining."]
+
+9.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "You know, my view is that we have a big world out there.":says "You know, my view is that we have a big world out there.":someone say "You know, my view is that we have a big world out there."]
+
+10.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "This isn’t just about one election. It’s about who we are as a nation.":says "This isn’t just about one election. It’s about who we are as a nation.":someone say "This isn’t just about one election. It’s about who we are as a nation."]
+
+
+
+
+
+
+	[BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS:SKIN:FAT:MUSCLE:BONE:CARTILAGE]
+	[BODY_DETAIL_PLAN:HEAD_HAIR_TISSUE_LAYERS]
+	[USE_TISSUE_TEMPLATE:EYEBROW:EYEBROW_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:HEAD:EYEBROW:ABOVE:BY_CATEGORY:EYE]
+	[USE_TISSUE_TEMPLATE:EYELASH:EYELASH_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:EYELID:EYELASH:FRONT]
+	[USE_MATERIAL_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:FINGER:NAIL:FRONT]
+	[TISSUE_LAYER:BY_CATEGORY:TOE:NAIL:FRONT]
+	[SELECT_TISSUE_LAYER:HEART:BY_CATEGORY:HEART]
+	 [PLUS_TISSUE_LAYER:SKIN:BY_CATEGORY:THROAT]
+		[TL_MAJOR_ARTERIES]
+	[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUES]
+	[BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RELSIZES]
+
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+		 [PLUS_TL_GROUP:BY_CATEGORY:HEAD:EYEBROW]
+		 [PLUS_TL_GROUP:BY_CATEGORY:EYELID:EYELASH]
+	[TL_COLOR_MODIFIER:TAN:1]Not exactly right though.
+				[TLCM_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+			[APP_MOD_NOUN:hair:SINGULAR]
+
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+			[TISSUE_STYLE_UNIT:HAIR:STANDARD_HAIR_SHAPINGS]
+				[TSU_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
+	[TL_COLOR_MODIFIER:WHITE:1]
+				[TLCM_NOUN:skin:SINGULAR]
+			[TISSUE_LAYER_APPEARANCE_MODIFIER:WRINKLY:0:0:0:0:0:0:0]
+				[APP_MOD_RATE:1:YEARLY:0:100:30:0:NO_END]
+				[APP_MOD_NOUN:skin:SINGULAR]
+				[APP_MOD_DESC_RANGE:0:0:0:1:25:50]
+[ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:punch:punches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:MAIN]
+	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]
+		[ATTACK_SKILL:STANCE_STRIKE]
+		[ATTACK_VERB:kick:kicks]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_BAD_MULTIATTACK]
+	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:GRASP:BY_CATEGORY:FINGER:NAIL]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:scratch:scratches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PRIORITY:SECOND]
+	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]
+		[ATTACK_SKILL:BITE]
+		[ATTACK_VERB:bite:bites]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_CANLATCH]
+	[ATTACK:PUNCH:BODYPART:BY_CATEGORY:HEAD]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:headbutt:headbutts]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_PRIORITY:SECOND]
+
+	[CASTE:TRUMP]The best caste, really. Just tremendous.
+		[MALE]
+[CASTE_NAME:Donald Trump:Donald Trumps:Trump]
+	[CASTE_TILE:'D'][CASTE_COLOR:4:0:1]
+[DESCRIPTION:The politician Donald Trump has come! Beware its big beautiful wall!]
+		[BODY:HUMANOID_NECK:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:HUMANOID_JOINTS:THROAT:NECK:SPINE:BRAIN:SKULL:5FINGERS:5TOES:MOUTH:TONGUE:FACIAL_FEATURES:TEETH:RIBCAGE]		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
+
+		1.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I don't do it for the money. I've got enough, much more than I'll ever need. I do it to do it. Deals are my art form.":says "I don't do it for the money. I've got enough, much more than I'll ever need. I do it to do it. Deals are my art form.":someone say "I don't do it for the money. I've got enough, much more than I'll ever need. I do it to do it. Deals are my art form."]
+
+	2.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "When Mexico sends its people, they're not sending their best.":says "When Mexico sends its people, they're not sending their best.":someone say "When Mexico sends its people, they're not sending their best."]
+
+3.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "We are going to make America great again!":says "We are going to make America great again!":someone say "We are going to make America great again!"]
+
+4.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I would build a great wall, and nobody builds walls better than me, believe me, and I’ll build them very inexpensively, I will build a great, great wall on our southern border. And I will have Mexico pay for that wall.":says "I would build a great wall, and nobody builds walls better than me, believe me, and I’ll build them very inexpensively, I will build a great, great wall on our southern border. And I will have Mexico pay for that wall.":someone say "I would build a great wall, and nobody builds walls better than me, believe me, and I’ll build them very inexpensively, I will build a great, great wall on our southern border. And I will have Mexico pay for that wall."]
+
+5.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "The entire world has been upset. The entire world, it's a different place. During Barack Obama and Hillary Clinton's term, she's done a horrible job.":says "The entire world has been upset. The entire world, it's a different place. During Barack Obama and Hillary Clinton's term, she's done a horrible job.":someone say "The entire world has been upset. The entire world, it's a different place. During Barack Obama and Hillary Clinton's term, she's done a horrible job."]
+
+6.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Our military is a disaster.":says "Our military is a disaster.":someone say "Our military is a disaster."]
+
+7.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Torture works, okay folks? Believe me, it works.":says "Torture works, okay folks? Believe me, it works.":someone say "Torture works, okay folks? Believe me, it works."]
+
+8.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I called myself the king of debt. I’m the king of debt. I’m great with debt, nobody knows debt better than me. I made a fortune by using debt. And if things don’t work out I renegotiate the debt, I mean that’s a smart thing not a stupid thing. And I made a fortune.":says "I called myself the king of debt. I’m the king of debt. I’m great with debt, nobody knows debt better than me. I made a fortune by using debt. And if things don’t work out I renegotiate the debt, I mean that’s a smart thing not a stupid thing. And I made a fortune.":someone say "I called myself the king of debt. I’m the king of debt. I’m great with debt, nobody knows debt better than me. I made a fortune by using debt. And if things don’t work out I renegotiate the debt, I mean that’s a smart thing not a stupid thing. And I made a fortune."]
+
+9.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Mr. Khan, who does not know me, viciously attacked me from the stage of the DNC and is now all over T.V. doing the same. Nice!":says "Mr. Khan, who does not know me, viciously attacked me from the stage of the DNC and is now all over T.V. doing the same. Nice!":someone say "Mr. Khan, who does not know me, viciously attacked me from the stage of the DNC and is now all over T.V. doing the same. Nice!"]
+
+10.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "ISIS is honoring President Obama. He is the founder of ISIS. He founded ISIS. And I would say the co-founder would be crooked Hillary Clinton.":says "ISIS is honoring President Obama. He is the founder of ISIS. He founded ISIS. And I would say the co-founder would be crooked Hillary Clinton.":someone say "ISIS is honoring President Obama. He is the founder of ISIS. He founded ISIS. And I would say the co-founder would be crooked Hillary Clinton."]
+
+11.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "If I'm president, you're going to see 'Merry Christmas' in department stores, believe me.":says "If I'm president, you're going to see 'Merry Christmas' in department stores, believe me.":someone say "If I'm president, you're going to see 'Merry Christmas' in department stores, believe me."]
+
+12.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "No country has ever prospered that failed to put its own interests first.":says "No country has ever prospered that failed to put its own interests first.":someone say "No country has ever prospered that failed to put its own interests first."]
+
+13.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "We are going to build a great border wall to stop illegal immigration, to stop the gangs and the violence, and to stop the drugs from pouring into our communities.":says "We are going to build a great border wall to stop illegal immigration, to stop the gangs and the violence, and to stop the drugs from pouring into our communities.":someone say "We are going to build a great border wall to stop illegal immigration, to stop the gangs and the violence, and to stop the drugs from pouring into our communities."]
+
+14.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "We must immediately suspend immigration from any nation that has been compromised by terrorism until such time as proven vetting mechanisms have been put in place.":says "We must immediately suspend immigration from any nation that has been compromised by terrorism until such time as proven vetting mechanisms have been put in place.":someone say "We must immediately suspend immigration from any nation that has been compromised by terrorism until such time as proven vetting mechanisms have been put in place."]
+
+15.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "You have to take out their families. When you get these terrorists, you have to take out their families.":says "You have to take out their families. When you get these terrorists, you have to take out their families.":someone say "You have to take out their families. When you get these terrorists, you have to take out their families."]
+
+16.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Written by a nice reporter. Now the poor guy - you ought to see the guy: ‘Uhh I don’t know what I said. I don’t remember!’ He’s going, ‘I don’t remember! Maybe that’s what I said.’":says "Written by a nice reporter. Now the poor guy - you ought to see the guy: ‘Uhh I don’t know what I said. I don’t remember!’ He’s going, ‘I don’t remember! Maybe that’s what I said.’":someone say "Written by a nice reporter. Now the poor guy - you ought to see the guy: ‘Uhh I don’t know what I said. I don’t remember!’ He’s going, ‘I don’t remember! Maybe that’s what I said.’"]
+
+17.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "If she gets to pick her judges, nothing you can do, folks. Although the Second Amendment people, maybe there is. I don’t know.":says "If she gets to pick her judges, nothing you can do, folks. Although the Second Amendment people, maybe there is. I don’t know.":someone say "If she gets to pick her judges, nothing you can do, folks. Although the Second Amendment people, maybe there is. I don’t know.]
+
+18.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I’m speaking with myself, number one, because I have a very good brain and I’ve said a lot of things.":says "I’m speaking with myself, number one, because I have a very good brain and I’ve said a lot of things.":someone say "I’m speaking with myself, number one, because I have a very good brain and I’ve said a lot of things."]
+
+19.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "She probably, maybe she wasn't allowed to have anything to say. You tell me, but a plenty of people have written that.":says "She probably, maybe she wasn't allowed to have anything to say. You tell me, but a plenty of people have written that.":someone say "She probably, maybe she wasn't allowed to have anything to say. You tell me, but a plenty of people have written that."]
+
+20.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I could stand in the middle of 5th Avenue and shoot somebody, and I wouldn't lose any voters.":says "I could stand in the middle of 5th Avenue and shoot somebody, and I wouldn't lose any voters.":someone say "I could stand in the middle of 5th Avenue and shoot somebody, and I wouldn't lose any voters."]
+
+21.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Tremendous!":says "Tremendous!":someone say "Tremendous!"]
+	
+	[BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS:SKIN:FAT:MUSCLE:BONE:CARTILAGE]
+	[BODY_DETAIL_PLAN:HEAD_HAIR_TISSUE_LAYERS]
+	[USE_TISSUE_TEMPLATE:EYEBROW:EYEBROW_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:HEAD:EYEBROW:ABOVE:BY_CATEGORY:EYE]
+	[USE_TISSUE_TEMPLATE:EYELASH:EYELASH_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:EYELID:EYELASH:FRONT]
+	[USE_MATERIAL_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:FINGER:NAIL:FRONT]
+	[TISSUE_LAYER:BY_CATEGORY:TOE:NAIL:FRONT]
+	[SELECT_TISSUE_LAYER:HEART:BY_CATEGORY:HEART]
+	 [PLUS_TISSUE_LAYER:SKIN:BY_CATEGORY:THROAT]
+		[TL_MAJOR_ARTERIES]
+	[BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RELSIZES]
+
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+		 [PLUS_TL_GROUP:BY_CATEGORY:HEAD:EYEBROW]
+		 [PLUS_TL_GROUP:BY_CATEGORY:EYELID:EYELASH]
+	[TL_COLOR_MODIFIER:YELLOW:1]
+				[TLCM_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+			[APP_MOD_NOUN:hair:SINGULAR]
+
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+			[TISSUE_STYLE_UNIT:HAIR:STANDARD_HAIR_SHAPINGS]
+				[TSU_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
+	[TL_COLOR_MODIFIER:ORANGE:1]
+				[TLCM_NOUN:skin:SINGULAR]
+			[TISSUE_LAYER_APPEARANCE_MODIFIER:WRINKLY:0:0:0:0:0:0:0]
+				[APP_MOD_RATE:1:YEARLY:0:100:30:0:NO_END]
+				[APP_MOD_NOUN:skin:SINGULAR]
+				[APP_MOD_DESC_RANGE:0:0:0:1:25:50][ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:punch:punches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:MAIN]
+	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]
+		[ATTACK_SKILL:STANCE_STRIKE]
+		[ATTACK_VERB:kick:kicks]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_BAD_MULTIATTACK]
+	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:GRASP:BY_CATEGORY:FINGER:NAIL]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:scratch:scratches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PRIORITY:SECOND]
+	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]
+		[ATTACK_SKILL:BITE]
+		[ATTACK_VERB:bite:bites]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_CANLATCH]
+	[ATTACK:PUNCH:BODYPART:BY_CATEGORY:HEAD]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:headbutt:headbutts]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_PRIORITY:SECOND]
+
+	[CASTE:OBAMA]
+		[MALE]
+[CASTE_NAME:Barack Obama:Barack Obamas:Obama]
+	[CASTE_TILE:'O'][CASTE_COLOR:3:0:1]
+[DESCRIPTION:The politician Barack Obama has come! Beware its flying drones!]
+		[BODY:HUMANOID_NECK:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:HUMANOID_JOINTS:THROAT:NECK:SPINE:BRAIN:SKULL:5FINGERS:5TOES:MOUTH:TONGUE:FACIAL_FEATURES:TEETH:RIBCAGE]		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
+
+	1.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Our destiny is not written for us, but by us.":says "Our destiny is not written for us, but by us.":someone say "Our destiny is not written for us, but by us."]
+
+      2.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I don't think me calling House Republican members would have been that helpful. I tend not to be that persuasive on that side of the aisle.":says "I don't think me calling House Republican members would have been that helpful. I tend not to be that persuasive on that side of the aisle.":someone say "I don't think me calling House Republican members would have been that helpful. I tend not to be that persuasive on that side of the aisle."]
+
+     3.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Contrary to the rumours that you've heard, I was not born in a manger. I was actually born on Krypton and sent here by my father, Jor El, to save the planet Earth.":says "Contrary to the rumours that you've heard, I was not born in a manger. I was actually born on Krypton and sent here by my father, Jor El, to save the planet Earth.":someone say "Contrary to the rumours that you've heard, I was not born in a manger. I was actually born on Krypton and sent here by my father, Jor El, to save the planet Earth."]
+
+     4.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "We are a people of improbable hope.":says "We are a people of improbable hope.":someone say "We are a people of improbable hope."]
+
+     5.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "We are, and always will be, the United States of America.":says "We are, and always will be, the United States of America.":someone say "We are, and always will be, the United States of America."]
+
+     6.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Real power means you can get what you want without having to exert violence.":says "Real power means you can get what you want without having to exert violence.":someone say "Real power means you can get what you want without having to exert violence."]
+    
+     7.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "War, no matter what our intentions may be, brings suffering and tragedy.":says "War, no matter what our intentions may be, brings suffering and tragedy.":someone say "War, no matter what our intentions may be, brings suffering and tragedy."]
+
+     8.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Leadership means a wise application of military power, and rallying the world behind causes that are right.":says "Leadership means a wise application of military power, and rallying the world behind causes that are right.":someone say "Leadership means a wise application of military power, and rallying the world behind causes that are right."]
+
+     9.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "You know, the Donald is not really a plans guy. He’s not really a facts guy, either.":says "You know, the Donald is not really a plans guy. He’s not really a facts guy, either.":someone say "You know, the Donald is not really a plans guy. He’s not really a facts guy, either."]
+
+    10.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Please, proceed.":says "Please, proceed.":someone say "Please, proceed."]
+
+   1.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Hope! Change!":says "Hope! Change!":someone say "Hope! Change!"]
+
+   2.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Yes we can!":says "Yes we can!":someone say "Yes we can!"]
+
+   3. [SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "When you come after Americans, we go after you. It may take time, but we have long memories, and our reach has no limit.":says "When you come after Americans, we go after you. It may take time, but we have long memories, and our reach has no limit.":someone say "When you come after Americans, we go after you. It may take time, but we have long memories, and our reach has no limit."]
+
+   4.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Your experience cautions that progress is neither easy nor quick.":says "Your experience cautions that progress is neither easy nor quick.":someone say "Your experience cautions that progress is neither easy nor quick."]
+
+   5.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "This is a core principle of my presidency: If you threaten America, you will find no safe haven.":says "This is a core principle of my presidency: If you threaten America, you will find no safe haven.":someone say "This is a core principle of my presidency: If you threaten America, you will find no safe haven."]
+
+   6.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I will never forget who this victory truly belongs to. It belongs to you.":says "I will never forget who this victory truly belongs to. It belongs to you.":someone say "I will never forget who this victory truly belongs to. It belongs to you."]
+
+   7.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "One of the things I think I can bring to the presidency is to make government and public service cool again.":says "One of the things I think I can bring to the presidency is to make government and public service cool again.":someone say "One of the things I think I can bring to the presidency is to make government and public service cool again."]
+
+   8.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "The absence of hope can rot a society from within.":says "The absence of hope can rot a society from within.":someone say "The absence of hope can rot a society from within."]
+
+   9.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "What Washington needs is adult supervision.":says "What Washington needs is adult supervision.":someone say "What Washington needs is adult supervision."]
+
+   10.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Guantanamo will be closed no later than one year from now.":says "Guantanamo will be closed no later than one year from now.":someone say "Guantanamo will be closed no later than one year from now"]
+
+	
+
+	[BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS:SKIN:FAT:MUSCLE:BONE:CARTILAGE]
+	[BODY_DETAIL_PLAN:HEAD_HAIR_TISSUE_LAYERS]
+	[USE_TISSUE_TEMPLATE:EYEBROW:EYEBROW_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:HEAD:EYEBROW:ABOVE:BY_CATEGORY:EYE]
+	[USE_TISSUE_TEMPLATE:EYELASH:EYELASH_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:EYELID:EYELASH:FRONT]
+	[USE_MATERIAL_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:FINGER:NAIL:FRONT]
+	[TISSUE_LAYER:BY_CATEGORY:TOE:NAIL:FRONT]
+	[SELECT_TISSUE_LAYER:HEART:BY_CATEGORY:HEART]
+	 [PLUS_TISSUE_LAYER:SKIN:BY_CATEGORY:THROAT]
+		[TL_MAJOR_ARTERIES]
+	[BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RELSIZES]
+
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+		 [PLUS_TL_GROUP:BY_CATEGORY:HEAD:EYEBROW]
+		 [PLUS_TL_GROUP:BY_CATEGORY:EYELID:EYELASH]
+	[TL_COLOR_MODIFIER:MOTTLED_GRAY_BROWN:1]
+				[TLCM_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+			[APP_MOD_NOUN:hair:SINGULAR]
+				[APP_MOD_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+			[TISSUE_STYLE_UNIT:HAIR:STANDARD_HAIR_SHAPINGS]
+				[TSU_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
+	[TL_COLOR_MODIFIER:BROWN:1]
+				[TLCM_NOUN:skin:SINGULAR]
+			[TISSUE_LAYER_APPEARANCE_MODIFIER:WRINKLY:0:0:0:0:0:0:0]
+				[APP_MOD_RATE:1:YEARLY:0:100:30:0:NO_END]
+				[APP_MOD_NOUN:skin:SINGULAR]
+				[APP_MOD_DESC_RANGE:0:0:0:1:25:50][ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:punch:punches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:MAIN]
+	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]
+		[ATTACK_SKILL:STANCE_STRIKE]
+		[ATTACK_VERB:kick:kicks]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_BAD_MULTIATTACK]
+	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:GRASP:BY_CATEGORY:FINGER:NAIL]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:scratch:scratches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PRIORITY:SECOND]
+	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]
+		[ATTACK_SKILL:BITE]
+		[ATTACK_VERB:bite:bites]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_CANLATCH]
+	[ATTACK:PUNCH:BODYPART:BY_CATEGORY:HEAD]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:headbutt:headbutts]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_PRIORITY:SECOND]
+
+	[CASTE:SANDERS]
+		[MALE]
+[CASTE_NAME:Bernie Sanders:Bernie Sanders:Sanders]
+	[CASTE_TILE:'S'][CASTE_COLOR:3:0:1]
+[DESCRIPTION:The politician Bernie Sanders has come! Beware its Reddit legions!]
+		[BODY:HUMANOID_NECK:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:HUMANOID_JOINTS:THROAT:NECK:SPINE:BRAIN:SKULL:5FINGERS:5TOES:MOUTH:TONGUE:FACIAL_FEATURES:TEETH:RIBCAGE]		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
+
+	1.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "The revolution comes when two strangers smile at each other,":says "The revolution comes when two strangers smile at each other,":someone say "The revolution comes when two strangers smile at each other,"]
+
+     2.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Billionaires and Wall Street should not be buying elections.":says "Billionaires and Wall Street should not be buying elections.":someone say "Billionaires and Wall Street should not be buying elections."]
+
+    3.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Today in America, the middle class is disappearing.":says "Today in America, the middle class is disappearing.":someone say "Today in America, the middle class is disappearing."]
+
+   4.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "We need a political revolution in this country.":says "We need a political revolution in this country.":someone say "We need a political revolution in this country."]
+
+   5.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I will not deport children from the United States of America.":says "I will not deport children from the United States of America.":someone say "I will not deport children from the United States of America."]
+
+  6.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I fear very much that, in fact, government of the people, by the people and for the people is beginning to perish in America.":says "I fear very much that, in fact, government of the people, by the people and for the people is beginning to perish in America.":someone say "I fear very much that, in fact, government of the people, by the people and for the people is beginning to perish in America."]
+
+  7.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "In my view, and we've introduced legislation to deal with this, if a bank is too big to fail, it is too big to exist.":says "In my view, and we've introduced legislation to deal with this, if a bank is too big to fail, it is too big to exist.":someone say "In my view, and we've introduced legislation to deal with this, if a bank is too big to fail, it is too big to exist."]
+
+ 8.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Are we happy that 99 percent of all new income is going to the top 1 percent?":says "Are we happy that 99 percent of all new income is going to the top 1 percent?":someone say "Are we happy that 99 percent of all new income is going to the top 1 percent?"]
+
+ 9.   	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I think when the American people stand up and fight back, yes, we can have it, a Medicare for all health care system.":says "I think when the American people stand up and fight back, yes, we can have it, a Medicare for all health care system.":someone say "I think when the American people stand up and fight back, yes, we can have it, a Medicare for all health care system."]
+
+   10.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I would rather invest in education and jobs than jails and incarceration.":says "I would rather invest in education and jobs than jails and incarceration.":someone say "I would rather invest in education and jobs than jails and incarceration."]
+
+1.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "If we stand up, fight back, we can do a lot better.":says "If we stand up, fight back, we can do a lot better.":someone say "If we stand up, fight back, we can do a lot better."]
+
+2. 	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "We’ve got to bring people together.":says "We’ve got to bring people together.":someone say "We’ve got to bring people together."]
+
+3.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I think the point is look at the record, and it’s a record that I am proud of.":says "I think the point is look at the record, and it’s a record that I am proud of.":someone say "I think the point is look at the record, and it’s a record that I am proud of."]
+
+4.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "We are living in a world where greed has become for the wealthiest people their own religion, and they make no apologies for it.":says "We are living in a world where greed has become for the wealthiest people their own religion, and they make no apologies for it.":someone say "We are living in a world where greed has become for the wealthiest people their own religion, and they make no apologies for it."]
+
+5.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "When you're white you don't know what it's like to be living in a ghetto, you don't know what it's like to be poor.":says "When you're white you don't know what it's like to be living in a ghetto, you don't know what it's like to be poor.":someone say "When you're white you don't know what it's like to be living in a ghetto, you don't know what it's like to be poor."]
+
+6.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "A nation that in many ways was created—I'm sorry to have to say this, from way back—on racist principles, that's a fact, we have come a long way as a nation.":says "A nation that in many ways was created—I'm sorry to have to say this, from way back—on racist principles, that's a fact, we have come a long way as a nation.":someone say "A nation that in many ways was created—I'm sorry to have to say this, from way back—on racist principles, that's a fact, we have come a long way as a nation."]
+
+7.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "It's funny, sometimes American journalists talk about how bad a country is, that people are lining up for food. That is a good thing! In other countries people don't line up for food, the rich get the food and the poor starve to death.":says "It's funny, sometimes American journalists talk about how bad a country is, that people are lining up for food. That is a good thing! In other countries people don't line up for food, the rich get the food and the poor starve to death.":someone say "It's funny, sometimes American journalists talk about how bad a country is, that people are lining up for food. That is a good thing! In other countries people don't line up for food, the rich get the food and the poor starve to death."]
+
+8.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "People can argue about the pluses and minuses of marijuana, but everyone knows it’s not a killer drug like heroin.":says "People can argue about the pluses and minuses of marijuana, but everyone knows it’s not a killer drug like heroin.":someone say "People can argue about the pluses and minuses of marijuana, but everyone knows it’s not a killer drug like heroin."]
+
+9.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Wall Street won’t change until we make it clear that no bank is too big to fail and no CEO is too big to jail.":says "Wall Street won’t change until we make it clear that no bank is too big to fail and no CEO is too big to jail.":someone say "Wall Street won’t change until we make it clear that no bank is too big to fail and no CEO is too big to jail."]
+
+10.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Comrade.":says "Comrade.":someone say "Comrade."]
+
+
+	
+	[BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS:SKIN:FAT:MUSCLE:BONE:CARTILAGE]
+	[BODY_DETAIL_PLAN:HEAD_HAIR_TISSUE_LAYERS]
+	[USE_TISSUE_TEMPLATE:EYEBROW:EYEBROW_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:HEAD:EYEBROW:ABOVE:BY_CATEGORY:EYE]
+	[USE_TISSUE_TEMPLATE:EYELASH:EYELASH_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:EYELID:EYELASH:FRONT]
+	[USE_MATERIAL_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:FINGER:NAIL:FRONT]
+	[TISSUE_LAYER:BY_CATEGORY:TOE:NAIL:FRONT]
+	[SELECT_TISSUE_LAYER:HEART:BY_CATEGORY:HEART]
+	 [PLUS_TISSUE_LAYER:SKIN:BY_CATEGORY:THROAT]
+		[TL_MAJOR_ARTERIES]
+	[BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RELSIZES]
+
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+		 [PLUS_TL_GROUP:BY_CATEGORY:HEAD:EYEBROW]
+		 [PLUS_TL_GROUP:BY_CATEGORY:EYELID:EYELASH]
+	[TL_COLOR_MODIFIER:WHITE:1]
+				[TLCM_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+			[APP_MOD_NOUN:hair:SINGULAR]
+
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+			[TISSUE_STYLE_UNIT:HAIR:STANDARD_HAIR_SHAPINGS]
+				[TSU_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
+	[TL_COLOR_MODIFIER:WHITE:1]
+				[TLCM_NOUN:skin:SINGULAR]
+			[TISSUE_LAYER_APPEARANCE_MODIFIER:WRINKLY:0:0:0:0:0:0:0]
+				[APP_MOD_RATE:1:YEARLY:0:100:30:0:NO_END]
+				[APP_MOD_NOUN:skin:SINGULAR]
+				[APP_MOD_DESC_RANGE:0:0:0:1:25:50][ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:punch:punches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:MAIN]
+	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]
+		[ATTACK_SKILL:STANCE_STRIKE]
+		[ATTACK_VERB:kick:kicks]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_BAD_MULTIATTACK]
+	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:GRASP:BY_CATEGORY:FINGER:NAIL]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:scratch:scratches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PRIORITY:SECOND]
+	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]
+		[ATTACK_SKILL:BITE]
+		[ATTACK_VERB:bite:bites]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_CANLATCH]
+	[ATTACK:PUNCH:BODYPART:BY_CATEGORY:HEAD]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:headbutt:headbutts]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_PRIORITY:SECOND]
+
+	[CASTE:JILL]
+		[FEMALE]		[MULTIPLE_LITTER_RARE]
+[CASTE_NAME:Jill Stein:Jill Steins:Jill Stein]
+	[CASTE_TILE:'J'][CASTE_COLOR:2:0:1]
+[DESCRIPTION:The politician Jill Stein has come! Beware its dismal poll numbers!]
+		[BODY:HUMANOID_NECK:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:HUMANOID_JOINTS:THROAT:NECK:SPINE:BRAIN:SKULL:5FINGERS:5TOES:MOUTH:TONGUE:FACIAL_FEATURES:TEETH:RIBCAGE]		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
+
+		1.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "People are told over and over, "Don't vote your values. Vote your fears." But what we got was everything we were afraid of.":says "People are told over and over, "Don't vote your values. Vote your fears." But what we got was everything we were afraid of.":someone say "People are told over and over, "Don't vote your values. Vote your fears." But what we got was everything we were afraid of."]
+
+	2.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "We don't support bombing other people's kids, unlike the other woman in the race.":says "We don't support bombing other people's kids, unlike the other woman in the race.":someone say "We don't support bombing other people's kids, unlike the other woman in the race."]
+
+    3.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "If you can't put your values into your vote, we don't have a democracy.":says "If you can't put your values into your vote, we don't have a democracy.":someone say "If you can't put your values into your vote, we don't have a democracy."]
+
+  4.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "The mythology is that political change happens only in election years. The truth is you build from election to election.":says "The mythology is that political change happens only in election years. The truth is you build from election to election.":someone say "The mythology is that political change happens only in election years. The truth is you build from election to election."]
+
+ 5.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Without third parties, all forward movement stops. They're essential. They're not just OK. They are absolutely essential.":says "Without third parties, all forward movement stops. They're essential. They're not just OK. They are absolutely essential.":someone say "Without third parties, all forward movement stops. They're essential. They're not just OK. They are absolutely essential."]
+
+6.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "We can, and must, shift to an economy in which 100% of our electricity is generated renewably.":says "We can, and must, shift to an economy in which 100% of our electricity is generated renewably.":someone say "We can, and must, shift to an economy in which 100% of our electricity is generated renewably."]
+
+7.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I have long since thrown in the towel on the Democratic and Republican parties because they are really a front group for the 1 percent, for predatory banks, fossil fuel giants, and war profiteers.":says "I have long since thrown in the towel on the Democratic and Republican parties because they are really a front group for the 1 percent, for predatory banks, fossil fuel giants, and war profiteers.":someone say "I have long since thrown in the towel on the Democratic and Republican parties because they are really a front group for the 1 percent, for predatory banks, fossil fuel giants, and war profiteers."]
+
+8.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "We create refugees, and then our Democratic Party, together with the Republicans, who are also a party to this, are criminalizing them and sending them back, inhumanely.":says "We create refugees, and then our Democratic Party, together with the Republicans, who are also a party to this, are criminalizing them and sending them back, inhumanely.":someone say "We create refugees, and then our Democratic Party, together with the Republicans, who are also a party to this, are criminalizing them and sending them back, inhumanely."]
+
+ 9.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "The Green Party has long sought to establish a collaboration with Bernie Sanders.":says "The Green Party has long sought to establish a collaboration with Bernie Sanders.":someone say "The Green Party has long sought to establish a collaboration with Bernie Sanders."]
+
+10.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "To provide a welcoming path to citizenship for immigrants and to restore our civil liberties, our foreign policy platform is very important.":says "To provide a welcoming path to citizenship for immigrants and to restore our civil liberties, our foreign policy platform is very important.":someone say "To provide a welcoming path to citizenship for immigrants and to restore our civil liberties, our foreign policy platform is very important."]
+
+1.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Democracy is not what we don't want. Democracy is what we do want.":says "Democracy is not what we don't want. Democracy is what we do want.":someone say "Democracy is not what we don't want. Democracy is what we do want."]
+
+2.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I don't have a vested interest in a particular political career or a particular political office.":says "I don't have a vested interest in a particular political career or a particular political office.":someone say "I don't have a vested interest in a particular political career or a particular political office."]
+
+3.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Forward movement is a good thing, but I always include that it's not enough, and we have to have a base where we can truly build. That cannot be done inside of the corporate, establishment political parties.":says "Forward movement is a good thing, but I always include that it's not enough, and we have to have a base where we can truly build. That cannot be done inside of the corporate, establishment political parties.":someone say "Forward movement is a good thing, but I always include that it's not enough, and we have to have a base where we can truly build. That cannot be done inside of the corporate, establishment political parties."]
+
+4.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I don't know if Gary Johnson is out there doing a campaign, actually. I think he's talking to press a little bit, but I don't think they hold events.":says "I don't know if Gary Johnson is out there doing a campaign, actually. I think he's talking to press a little bit, but I don't think they hold events.":someone say "I don't know if Gary Johnson is out there doing a campaign, actually. I think he's talking to press a little bit, but I don't think they hold events."]
+
+5. 	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Donald Trump is about the rise of right-wing extremism, not only in this country, but in Europe.":says "Donald Trump is about the rise of right-wing extremism, not only in this country, but in Europe.":someone say "Donald Trump is about the rise of right-wing extremism, not only in this country, but in Europe."]
+
+6.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "People have been savaged by a predatory economic and political system, and some are turning to Trump. Unfortunately, Trump is just more of the same.":says "People have been savaged by a predatory economic and political system, and some are turning to Trump. Unfortunately, Trump is just more of the same.":someone say "People have been savaged by a predatory economic and political system, and some are turning to Trump. Unfortunately, Trump is just more of the same."]
+
+7.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Hillary Clinton is the problem; she is not the solution to Donald Trump. We are the solution. We are the ones we've been waiting for. This is our moment. Together, we do have the power to create an America and a world that works for all of us.":says "Hillary Clinton is the problem; she is not the solution to Donald Trump. We are the solution. We are the ones we've been waiting for. This is our moment. Together, we do have the power to create an America and a world that works for all of us.":someone say "Hillary Clinton is the problem; she is not the solution to Donald Trump. We are the solution. We are the ones we've been waiting for. This is our moment. Together, we do have the power to create an America and a world that works for all of us."]
+
+8.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I'd say putting another Clinton in the White House is only going to make that right-wing extremism greater.":says "I'd say putting another Clinton in the White House is only going to make that right-wing extremism greater.":someone say "I'd say putting another Clinton in the White House is only going to make that right-wing extremism greater."]
+
+9.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "On climate change, we are told that there will be a civilization ending development in the form of massive sea level rise as soon as 2050. Anybody plan to be here in 2050? I think a few of us do, myself included.":says "On climate change, we are told that there will be a civilization ending development in the form of massive sea level rise as soon as 2050. Anybody plan to be here in 2050? I think a few of us do, myself included.":someone say "On climate change, we are told that there will be a civilization ending development in the form of massive sea level rise as soon as 2050. Anybody plan to be here in 2050? I think a few of us do, myself included."]
+
+10.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Such a thing as ending unemployment would never occur to Washington politicians because their corporate backers depend on the threat of unemployment to keep wages down.":says "Such a thing as ending unemployment would never occur to Washington politicians because their corporate backers depend on the threat of unemployment to keep wages down.":someone say "Such a thing as ending unemployment would never occur to Washington politicians because their corporate backers depend on the threat of unemployment to keep wages down."]
+
+
+
+	
+	[BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS:SKIN:FAT:MUSCLE:BONE:CARTILAGE]
+	[BODY_DETAIL_PLAN:HEAD_HAIR_TISSUE_LAYERS]
+	[USE_TISSUE_TEMPLATE:EYEBROW:EYEBROW_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:HEAD:EYEBROW:ABOVE:BY_CATEGORY:EYE]
+	[USE_TISSUE_TEMPLATE:EYELASH:EYELASH_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:EYELID:EYELASH:FRONT]
+	[USE_MATERIAL_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:FINGER:NAIL:FRONT]
+	[TISSUE_LAYER:BY_CATEGORY:TOE:NAIL:FRONT]
+	[SELECT_TISSUE_LAYER:HEART:BY_CATEGORY:HEART]
+	 [PLUS_TISSUE_LAYER:SKIN:BY_CATEGORY:THROAT]
+		[TL_MAJOR_ARTERIES]
+	[BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RELSIZES]
+
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+		 [PLUS_TL_GROUP:BY_CATEGORY:HEAD:EYEBROW]
+		 [PLUS_TL_GROUP:BY_CATEGORY:EYELID:EYELASH]
+	[TL_COLOR_MODIFIER:WHITE:1]
+				[TLCM_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+			[APP_MOD_NOUN:hair:SINGULAR]
+
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+			[TISSUE_STYLE_UNIT:HAIR:STANDARD_HAIR_SHAPINGS]
+				[TSU_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
+	[TL_COLOR_MODIFIER:WHITE:1]
+				[TLCM_NOUN:skin:SINGULAR]
+			[TISSUE_LAYER_APPEARANCE_MODIFIER:WRINKLY:0:0:0:0:0:0:0]
+				[APP_MOD_RATE:1:YEARLY:0:100:30:0:NO_END]
+				[APP_MOD_NOUN:skin:SINGULAR]
+				[APP_MOD_DESC_RANGE:0:0:0:1:25:50][ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:punch:punches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:MAIN]
+	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]
+		[ATTACK_SKILL:STANCE_STRIKE]
+		[ATTACK_VERB:kick:kicks]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_BAD_MULTIATTACK]
+	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:GRASP:BY_CATEGORY:FINGER:NAIL]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:scratch:scratches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PRIORITY:SECOND]
+	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]
+		[ATTACK_SKILL:BITE]
+		[ATTACK_VERB:bite:bites]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_CANLATCH]
+	[ATTACK:PUNCH:BODYPART:BY_CATEGORY:HEAD]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:headbutt:headbutts]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_PRIORITY:SECOND]
+
+
+[CASTE:GARYJOHNSON]
+		[MALE]
+[CASTE_NAME:Gary Johnson:Gary Johnsons:Libertarian]
+	[CASTE_TILE:'G'][CASTE_COLOR:6:0:1]
+[DESCRIPTION:The politician Gary Johnson has come! Beware its corporate Internet laws!]
+		[BODY:HUMANOID_NECK:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:HUMANOID_JOINTS:THROAT:NECK:SPINE:BRAIN:SKULL:5FINGERS:5TOES:MOUTH:TONGUE:FACIAL_FEATURES:TEETH:RIBCAGE]		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
+
+1.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "
+The root of all evil, if you want to point at it, is politicians that are going to save you and I from terrorists, from illegal immigrants, from drugs. "Elect me, and I'll save you."":says "
+The root of all evil, if you want to point at it, is politicians that are going to save you and I from terrorists, from illegal immigrants, from drugs. "Elect me, and I'll save you."":someone say "
+The root of all evil, if you want to point at it, is politicians that are going to save you and I from terrorists, from illegal immigrants, from drugs. "Elect me, and I'll save you.""]
+
+2.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I do think that climate change is occurring, that it is man-caused. One of the proposals that I think is a very libertarian proposal, and I'm just open to this, is taxing carbon emission that may have the result of being self-regulating.":says "I do think that climate change is occurring, that it is man-caused. One of the proposals that I think is a very libertarian proposal, and I'm just open to this, is taxing carbon emission that may have the result of being self-regulating.":someone say "I do think that climate change is occurring, that it is man-caused. One of the proposals that I think is a very libertarian proposal, and I'm just open to this, is taxing carbon emission that may have the result of being self-regulating."]
+
+3.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I really do think that the two-party system is broken.":says "I really do think that the two-party system is broken.":someone say "I really do think that the two-party system is broken."]
+
+4.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I think that the only way that we deal with Syria is to join hands with Russia to diplomatically bring that at an end.":says "I think that the only way that we deal with Syria is to join hands with Russia to diplomatically bring that at an end.":someone say "I think that the only way that we deal with Syria is to join hands with Russia to diplomatically bring that at an end."]
+
+5.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I'm not getting elected dictator or king. But if I could wave a magic wand, I would eliminate income tax. I would eliminate corporate tax. And I would replace it with one federal consumption tax.":says "I'm not getting elected dictator or king. But if I could wave a magic wand, I would eliminate income tax. I would eliminate corporate tax. And I would replace it with one federal consumption tax.":someone say "I'm not getting elected dictator or king. But if I could wave a magic wand, I would eliminate income tax. I would eliminate corporate tax. And I would replace it with one federal consumption tax."]
+
+6.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Fixing America is not an insurmountable task. It's actually about putting people first rather than politics. I wouldn't be involved in this if I didn't think that we can make a difference, and that it is easy, it's really easy to be principled and put the issues first and politics last.":says "Fixing America is not an insurmountable task. It's actually about putting people first rather than politics. I wouldn't be involved in this if I didn't think that we can make a difference, and that it is easy, it's really easy to be principled and put the issues first and politics last.":someone say "Fixing America is not an insurmountable task. It's actually about putting people first rather than politics. I wouldn't be involved in this if I didn't think that we can make a difference, and that it is easy, it's really easy to be principled and put the issues first and politics last."]
+
+7.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I think that repealing or doing away with the corporate income tax is simply getting us back to where we were.":says "I think that repealing or doing away with the corporate income tax is simply getting us back to where we were.":someone say "I think that repealing or doing away with the corporate income tax is simply getting us back to where we were."]
+
+8.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I was opposed to us going to Iraq from the very beginning.":says "I was opposed to us going to Iraq from the very beginning.":someone say "I was opposed to us going to Iraq from the very beginning."]
+
+9.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Every face on Mt. Rushmore was a third party candidate at some point or another.":says "Every face on Mt. Rushmore was a third party candidate at some point or another.":someone say "Every face on Mt. Rushmore was a third party candidate at some point or another."]
+
+10.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "The argument to raise taxes to pay back the debt, that's one thing, but my experience tells me that it's not possible.":says "The argument to raise taxes to pay back the debt, that's one thing, but my experience tells me that it's not possible.":someone say "The argument to raise taxes to pay back the debt, that's one thing, but my experience tells me that it's not possible."]
+
+1.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I think the best thing the Federal Gov. can do when it comes to education K-12 is to abolish the Federal Department of Education.":says "I think the best thing the Federal Gov. can do when it comes to education K-12 is to abolish the Federal Department of Education.":someone say "I think the best thing the Federal Gov. can do when it comes to education K-12 is to abolish the Federal Department of Education."]
+
+2.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "This is the demise of the Republican Party. This is an opportunity, I think, for the Libertarian Party to become a major party.":says "This is the demise of the Republican Party. This is an opportunity, I think, for the Libertarian Party to become a major party.":someone say "This is the demise of the Republican Party. This is an opportunity, I think, for the Libertarian Party to become a major party."]
+
+3.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "People don't realize that there is another choice.":says "People don't realize that there is another choice.":someone say "People don't realize that there is another choice."]
+
+4.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Nothing is free.":says "Nothing is free.":someone say "Nothing is free."]
+
+5.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I happen to think that the world kind of looks down on Republicans for their social conservative views which include religion in government. I think that that should not play a role in any of this.":says "I happen to think that the world kind of looks down on Republicans for their social conservative views which include religion in government. I think that that should not play a role in any of this.":someone say "I happen to think that the world kind of looks down on Republicans for their social conservative views which include religion in government. I think that that should not play a role in any of this."]
+
+6.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "So net neutrality the notion is that it’s going to create a freer environment when the reality is .. is there really an issue now?":says "So net neutrality the notion is that it’s going to create a freer environment when the reality is .. is there really an issue now?":someone say "So net neutrality the notion is that it’s going to create a freer environment when the reality is .. is there really an issue now?"]
+
+7.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "The threats to privacy in America – from our own government – seem to never end.":says "The threats to privacy in America – from our own government – seem to never end.":someone say "The threats to privacy in America – from our own government – seem to never end."]
+
+8.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I've been a self-declared Libertarian since 1971. What was the old saying? That if you weren't a Democrat in college, you didn't have a heart. And if you weren't a Republican in later life, you didn't have a brain. Well, I happen to think libertarian kind of encompasses hearts and brains both. And that's what we all are about.":says "I've been a self-declared Libertarian since 1971. What was the old saying? That if you weren't a Democrat in college, you didn't have a heart. And if you weren't a Republican in later life, you didn't have a brain. Well, I happen to think libertarian kind of encompasses hearts and brains both. And that's what we all are about.":someone say "I've been a self-declared Libertarian since 1971. What was the old saying? That if you weren't a Democrat in college, you didn't have a heart. And if you weren't a Republican in later life, you didn't have a brain. Well, I happen to think libertarian kind of encompasses hearts and brains both. And that's what we all are about."]
+
+9.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "We were attacked, we attacked back.":says "We were attacked, we attacked back.":someone say "We were attacked, we attacked back."]
+
+10.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Is a man not entitled to the sweat of his brow?":says "Is a man not entitled to the sweat of his brow?":someone say "Is a man not entitled to the sweat of his brow?"]
+
+
+
+
+
+
+
+
+	[BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS:SKIN:FAT:MUSCLE:BONE:CARTILAGE]
+	[BODY_DETAIL_PLAN:HEAD_HAIR_TISSUE_LAYERS]
+	[USE_TISSUE_TEMPLATE:EYEBROW:EYEBROW_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:HEAD:EYEBROW:ABOVE:BY_CATEGORY:EYE]
+	[USE_TISSUE_TEMPLATE:EYELASH:EYELASH_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:EYELID:EYELASH:FRONT]
+	[USE_MATERIAL_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:FINGER:NAIL:FRONT]
+	[TISSUE_LAYER:BY_CATEGORY:TOE:NAIL:FRONT]
+	[SELECT_TISSUE_LAYER:HEART:BY_CATEGORY:HEART]
+	 [PLUS_TISSUE_LAYER:SKIN:BY_CATEGORY:THROAT]
+		[TL_MAJOR_ARTERIES]
+	[BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RELSIZES]
+
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+		 [PLUS_TL_GROUP:BY_CATEGORY:HEAD:EYEBROW]
+		 [PLUS_TL_GROUP:BY_CATEGORY:EYELID:EYELASH]
+	[TL_COLOR_MODIFIER:GRAY:1]
+				[TLCM_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+			[APP_MOD_NOUN:hair:SINGULAR]
+				[APP_MOD_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+			[TISSUE_STYLE_UNIT:HAIR:STANDARD_HAIR_SHAPINGS]
+				[TSU_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
+	[TL_COLOR_MODIFIER:WHITE:1]
+				[TLCM_NOUN:skin:SINGULAR]
+			[TISSUE_LAYER_APPEARANCE_MODIFIER:WRINKLY:0:0:0:0:0:0:0]
+				[APP_MOD_RATE:1:YEARLY:0:100:30:0:NO_END]
+				[APP_MOD_NOUN:skin:SINGULAR]
+				[APP_MOD_DESC_RANGE:0:0:0:1:25:50][ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:punch:punches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:MAIN]
+	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]
+		[ATTACK_SKILL:STANCE_STRIKE]
+		[ATTACK_VERB:kick:kicks]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_BAD_MULTIATTACK]
+	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:GRASP:BY_CATEGORY:FINGER:NAIL]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:scratch:scratches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PRIORITY:SECOND]
+	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]
+		[ATTACK_SKILL:BITE]
+		[ATTACK_VERB:bite:bites]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_CANLATCH]
+	[ATTACK:PUNCH:BODYPART:BY_CATEGORY:HEAD]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:headbutt:headbutts]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_PRIORITY:SECOND]
+
+[CASTE:JOHNKASICH]
+		[MALE]
+[CASTE_NAME:John Kasich:John Kasichs:Kasich]
+	[CASTE_TILE:'K'][CASTE_COLOR:4:0:1]
+[DESCRIPTION:The politician John Kasich has come! Beware its invisible campaigns!]
+		[BODY:HUMANOID_NECK:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:HUMANOID_JOINTS:THROAT:NECK:SPINE:BRAIN:SKULL:5FINGERS:5TOES:MOUTH:TONGUE:FACIAL_FEATURES:TEETH:RIBCAGE]		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
+
+	1.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "You know, when people have no meaning in their lives, they begin to do things that sometimes can be totally crazy.":says "You know, when people have no meaning in their lives, they begin to do things that sometimes can be totally crazy.":someone say "You know, when people have no meaning in their lives, they begin to do things that sometimes can be totally crazy."]
+
+   2.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I don't make promises, by and large, that I can't keep.":says "I don't make promises, by and large, that I can't keep.":someone say "I don't make promises, by and large, that I can't keep."]
+
+   3.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Sometimes people just don't understand the way that I work in politics.":says "Sometimes people just don't understand the way that I work in politics.":someone say "Sometimes people just don't understand the way that I work in politics."]
+
+   4.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Frankly, we are republicans and they're democrats but before all of that, we're Americans.":says "Frankly, we are republicans and they're democrats but before all of that, we're Americans.":someone say "Frankly, we are republicans and they're democrats but before all of that, we're Americans."]
+
+   5.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "A leader has a sound program, has a good policy, and then brings people together to solve problems.":says "A leader has a sound program, has a good policy, and then brings people together to solve problems.":someone say "A leader has a sound program, has a good policy, and then brings people together to solve problems."]
+
+  6.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I worry about America.":says "I worry about America.":someone say "I worry about America."]
+
+   7.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I don't want to get into an argument with somebody about how they ought to vote.":says "I don't want to get into an argument with somebody about how they ought to vote.":someone say "I don't want to get into an argument with somebody about how they ought to vote."]
+
+  8.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "We've got to unite our country again, because we're stronger when we are united and we are weaker when we are divided.":says "We've got to unite our country again, because we're stronger when we are united and we are weaker when we are divided.":someone say "We've got to unite our country again, because we're stronger when we are united and we are weaker when we are divided."]
+
+   9.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "You cannot build a little guy up by tearing a big guy down -- Abraham Lincoln said it.":says "You cannot build a little guy up by tearing a big guy down -- Abraham Lincoln said it.":someone say "You cannot build a little guy up by tearing a big guy down -- Abraham Lincoln said it."]
+
+   10.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Everybody should have a chance to rise. That's our philosophy in Ohio and that's my philosophy for America.":says "Everybody should have a chance to rise. That's our philosophy in Ohio and that's my philosophy for America.":someone say "Everybody should have a chance to rise. That's our philosophy in Ohio and that's my philosophy for America."]
+
+   1.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "People are beginning to understand my vision and my message because finally people are beginning to allow me to be heard.":says "People are beginning to understand my vision and my message because finally people are beginning to allow me to be heard.":someone say "People are beginning to understand my vision and my message because finally people are beginning to allow me to be heard."]
+
+    2.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Let's start off with my father being a mailman.":says "Let's start off with my father being a mailman.":someone say "Let's start off with my father being a mailman."]
+
+  3.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I've run an unwaveringly positive campaign since I got in this, and sometimes I've operated in total obscurity.":says "I've run an unwaveringly positive campaign since I got in this, and sometimes I've operated in total obscurity.":someone say "I've run an unwaveringly positive campaign since I got in this, and sometimes I've operated in total obscurity."]
+
+  4.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "You can go into a room and get people depressed and down and angry, or you can walk into that same room with people and give them hope.":says "You can go into a room and get people depressed and down and angry, or you can walk into that same room with people and give them hope.":someone say "You can go into a room and get people depressed and down and angry, or you can walk into that same room with people and give them hope."]
+
+  5.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "People say, everywhere I go, you seem to be the adult on stage.":says "People say, everywhere I go, you seem to be the adult on stage.":someone say "People say, everywhere I go, you seem to be the adult on stage."]
+
+   6.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Nobody's pressuring me to get out of the race and frankly, we've got some elections coming up.":says "Nobody's pressuring me to get out of the race and frankly, we've got some elections coming up.":someone say "Nobody's pressuring me to get out of the race and frankly, we've got some elections coming up."]
+
+   7.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I've always been underestimated. It's happened throughout my entire career.":says "I've always been underestimated. It's happened throughout my entire career.":someone say "I've always been underestimated. It's happened throughout my entire career."]
+
+   8.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Just because someone makes a speech doesn't mean they're on the take, I don't think that's Hillary's biggest problem.":says "Just because someone makes a speech doesn't mean they're on the take, I don't think that's Hillary's biggest problem.":someone say "Just because someone makes a speech doesn't mean they're on the take, I don't think that's Hillary's biggest problem."]
+
+   9.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "At a time when we are just deluged with negative ads and everything, we are peeking through with a positive message.":says "At a time when we are just deluged with negative ads and everything, we are peeking through with a positive message.":someone say "At a time when we are just deluged with negative ads and everything, we are peeking through with a positive message."]
+
+  10.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "...and many women left their kitchens to go out door to door and put yard signs up for me all the way back when things were different.":says "...and many women left their kitchens to go out door to door and put yard signs up for me all the way back when things were different.":someone say "...and many women left their kitchens to go out door to door and put yard signs up for me all the way back when things were different."]
+
+
+	
+	[BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS:SKIN:FAT:MUSCLE:BONE:CARTILAGE]
+	[BODY_DETAIL_PLAN:HEAD_HAIR_TISSUE_LAYERS]
+	[USE_TISSUE_TEMPLATE:EYEBROW:EYEBROW_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:HEAD:EYEBROW:ABOVE:BY_CATEGORY:EYE]
+	[USE_TISSUE_TEMPLATE:EYELASH:EYELASH_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:EYELID:EYELASH:FRONT]
+	[USE_MATERIAL_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:FINGER:NAIL:FRONT]
+	[TISSUE_LAYER:BY_CATEGORY:TOE:NAIL:FRONT]
+	[SELECT_TISSUE_LAYER:HEART:BY_CATEGORY:HEART]
+	 [PLUS_TISSUE_LAYER:SKIN:BY_CATEGORY:THROAT]
+		[TL_MAJOR_ARTERIES]
+	[BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RELSIZES]
+
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+		 [PLUS_TL_GROUP:BY_CATEGORY:HEAD:EYEBROW]
+		 [PLUS_TL_GROUP:BY_CATEGORY:EYELID:EYELASH]
+	[TL_COLOR_MODIFIER:GRAY:1]
+				[TLCM_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+			[APP_MOD_NOUN:hair:SINGULAR]
+				[APP_MOD_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+			[TISSUE_STYLE_UNIT:HAIR:STANDARD_HAIR_SHAPINGS]
+				[TSU_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
+	[TL_COLOR_MODIFIER:WHITE:1]
+				[TLCM_NOUN:skin:SINGULAR]
+			[TISSUE_LAYER_APPEARANCE_MODIFIER:WRINKLY:0:0:0:0:0:0:0]
+				[APP_MOD_RATE:1:YEARLY:0:100:30:0:NO_END]
+				[APP_MOD_NOUN:skin:SINGULAR]
+				[APP_MOD_DESC_RANGE:0:0:0:1:25:50][ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:punch:punches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:MAIN]
+	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]
+		[ATTACK_SKILL:STANCE_STRIKE]
+		[ATTACK_VERB:kick:kicks]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_BAD_MULTIATTACK]
+	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:GRASP:BY_CATEGORY:FINGER:NAIL]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:scratch:scratches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PRIORITY:SECOND]
+	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]
+		[ATTACK_SKILL:BITE]
+		[ATTACK_VERB:bite:bites]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_CANLATCH]
+	[ATTACK:PUNCH:BODYPART:BY_CATEGORY:HEAD]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:headbutt:headbutts]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_PRIORITY:SECOND]
+
+[CASTE:TEDCRUZ]
+		[MALE]
+[CASTE_NAME:Ted Cruz:Ted Cruzes:Cruz]
+	[CASTE_TILE:'T'][CASTE_COLOR:4:0:1]
+[DESCRIPTION:The politician Ted Cruz has come! Beware its anonymous letters!]
+		[BODY:HUMANOID_NECK:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:HUMANOID_JOINTS:THROAT:NECK:SPINE:BRAIN:SKULL:5FINGERS:5TOES:MOUTH:TONGUE:FACIAL_FEATURES:TEETH:RIBCAGE]		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
+
+	1.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I believe in you. I believe in the power of millions.":says "I believe in you. I believe in the power of millions.":someone say "I believe in you. I believe in the power of millions."]
+
+     2.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "We need to make D.C. listen.":says "We need to make D.C. listen.":someone say "We need to make D.C. listen."]
+
+    3.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Reaganomics, You start a business in your parents' garage. Obamanomics, You move into your parents' garage.":says "Reaganomics, You start a business in your parents' garage. Obamanomics, You move into your parents' garage.":someone say "Reaganomics, You start a business in your parents' garage. Obamanomics, You move into your parents' garage."]
+
+    4.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I do think in the media there is a tendency to describe conservatives as one of two things, stupid or evil.":says "I do think in the media there is a tendency to describe conservatives as one of two things, stupid or evil.":someone say "I do think in the media there is a tendency to describe conservatives as one of two things, stupid or evil."]
+
+   5.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Ya' want to know what I will do as president it's real simple. We'll kill terrorists, we'll repeal Obamacare, and we will defend the constitution. Every single word of of it!":says "Ya' want to know what I will do as president it's real simple. We'll kill terrorists, we'll repeal Obamacare, and we will defend the constitution. Every single word of of it!":someone say "Ya' want to know what I will do as president it's real simple. We'll kill terrorists, we'll repeal Obamacare, and we will defend the constitution. Every single word of of it!"]
+	
+6.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "You don't have to win every fight. You don't have to fight every fight. But you DO have to stand for something.":says "You don't have to win every fight. You don't have to fight every fight. But you DO have to stand for something.":someone say "You don't have to win every fight. You don't have to fight every fight. But you DO have to stand for something."]
+
+  7.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "It's not easy to tick me off... I don't get angry often. But you mess with my wife, you mess with my kids; that'll do it every time.":says "It's not easy to tick me off... I don't get angry often. But you mess with my wife, you mess with my kids; that'll do it every time.":someone say "It's not easy to tick me off... I don't get angry often. But you mess with my wife, you mess with my kids; that'll do it every time."]
+
+   8.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Most wars are not won in a single battle, what I’m looking forward to is changing the course this country is on.":says "Most wars are not won in a single battle, what I’m looking forward to is changing the course this country is on.":someone say "Most wars are not won in a single battle, what I’m looking forward to is changing the course this country is on."]
+
+   9.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "America is more than just a land mass between two oceans, America is an ideal. A simple, yet powerful ideal. Freedom matters.":says "America is more than just a land mass between two oceans, America is an ideal. A simple, yet powerful ideal. Freedom matters.":someone say "America is more than just a land mass between two oceans, America is an ideal. A simple, yet powerful ideal. Freedom matters."]
+
+  10.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "People are fed up with politicians who don't listen to them. Fed up with a corrupt system that benefits the elites instead of working men and women.":says "People are fed up with politicians who don't listen to them. Fed up with a corrupt system that benefits the elites instead of working men and women.":someone say "People are fed up with politicians who don't listen to them. Fed up with a corrupt system that benefits the elites instead of working men and women."]
+
+
+   1.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Sick of living/unwilling to die.":says "Sick of living/unwilling to die.":someone say "Sick of living/unwilling to die."]
+
+   2.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "THERE WILL
+BE MORE":says "THERE WILL
+BE MORE":someone say "THERE WILL
+BE MORE"]
+
+   3.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "In this cipher is my
+idenity.":says "In this cipher is my
+idenity.":someone say "In this cipher is my
+idenity."]
+
+   4.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "This is the Zodiac speaking.":says "This is the Zodiac speaking.":someone say "This is the Zodiac speaking."]
+
+     5.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I get awfully lonely when I am ignored, so lonely I could do my Thing!!!!!!":says "I get awfully lonely when I am ignored, so lonely I could do my Thing!!!!!!":someone say "I get awfully lonely when I am ignored, so lonely I could do my Thing!!!!!"]
+
+    6.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "The police shall never catch me, because I have been too clever for them.":says "The police shall never catch me, because I have been too clever for them.":someone say "The police shall never catch me, because I have been too clever for them."]
+
+   7.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I hope you enjoy your selves when I have my Blast.":says "I hope you enjoy your selves when I have my Blast.":someone say "I hope you enjoy your selves when I have my Blast."]
+
+   8.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "The reason I'm writing to the Times is this, They don't bury me on the back pages like some of the others.":says "The reason I'm writing to the Times is this, They don't bury me on the back pages like some of the others.":someone say "The reason I'm writing to the Times is this, They don't bury me on the back pages like some of the others."]
+
+  9.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "The death machine is all ready made.":says "The death machine is all ready made.":someone say "The death machine is all ready made."]
+
+  10.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "By the way have you cracked the last cipher I sent you?":says "By the way have you cracked the last cipher I sent you?":someone say "By the way have you cracked the last cipher I sent you?"]
+
+
+
+
+
+	[BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS:SKIN:FAT:MUSCLE:BONE:CARTILAGE]
+	[BODY_DETAIL_PLAN:HEAD_HAIR_TISSUE_LAYERS]
+	[USE_TISSUE_TEMPLATE:EYEBROW:EYEBROW_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:HEAD:EYEBROW:ABOVE:BY_CATEGORY:EYE]
+	[USE_TISSUE_TEMPLATE:EYELASH:EYELASH_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:EYELID:EYELASH:FRONT]
+	[USE_MATERIAL_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:FINGER:NAIL:FRONT]
+	[TISSUE_LAYER:BY_CATEGORY:TOE:NAIL:FRONT]
+	[SELECT_TISSUE_LAYER:HEART:BY_CATEGORY:HEART]
+	 [PLUS_TISSUE_LAYER:SKIN:BY_CATEGORY:THROAT]
+		[TL_MAJOR_ARTERIES]
+	[BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RELSIZES]
+
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+		 [PLUS_TL_GROUP:BY_CATEGORY:HEAD:EYEBROW]
+		 [PLUS_TL_GROUP:BY_CATEGORY:EYELID:EYELASH]
+	[TL_COLOR_MODIFIER:BROWN:1]
+				[TLCM_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+			[APP_MOD_NOUN:hair:SINGULAR]
+				[APP_MOD_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+			[TISSUE_STYLE_UNIT:HAIR:STANDARD_HAIR_SHAPINGS]
+				[TSU_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
+	[TL_COLOR_MODIFIER:WHITE:1]
+				[TLCM_NOUN:skin:SINGULAR]
+			[TISSUE_LAYER_APPEARANCE_MODIFIER:WRINKLY:0:0:0:0:0:0:0]
+				[APP_MOD_RATE:1:YEARLY:0:100:30:0:NO_END]
+				[APP_MOD_NOUN:skin:SINGULAR]
+				[APP_MOD_DESC_RANGE:0:0:0:1:25:50][ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:punch:punches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:MAIN]
+	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]
+		[ATTACK_SKILL:STANCE_STRIKE]
+		[ATTACK_VERB:kick:kicks]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_BAD_MULTIATTACK]
+	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:GRASP:BY_CATEGORY:FINGER:NAIL]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:scratch:scratches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PRIORITY:SECOND]
+	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]
+		[ATTACK_SKILL:BITE]
+		[ATTACK_VERB:bite:bites]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_CANLATCH]
+	[ATTACK:PUNCH:BODYPART:BY_CATEGORY:HEAD]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:headbutt:headbutts]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_PRIORITY:SECOND]
+
+[CASTE:BENCARSON]
+		[MALE]
+[CASTE_NAME:Ben Carson:Ben Carsons:Carson]
+	[CASTE_TILE:'B'][CASTE_COLOR:4:0:1]
+[DESCRIPTION:The politician Ben Carson has come! Beware its divine grain silos!]
+		[BODY:HUMANOID_NECK:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:HUMANOID_JOINTS:THROAT:NECK:SPINE:BRAIN:SKULL:5FINGERS:5TOES:MOUTH:TONGUE:FACIAL_FEATURES:TEETH:RIBCAGE]		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
+
+	1.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Do you have a brain? Then use it. It's all you need to overcome any problem.":says "Do you have a brain? Then use it. It's all you need to overcome any problem.":someone say "Do you have a brain? Then use it. It's all you need to overcome any problem."]
+
+     2.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "So after a while, if people won't accept your excuses, you stop looking for them.":says "So after a while, if people won't accept your excuses, you stop looking for them.":someone say "So after a while, if people won't accept your excuses, you stop looking for them."]
+
+     3.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "There is no fulfillment in things whatsoever. And I think one of the reasons that depression reigns supreme amongst the rich and famous is some of them thought that maybe those things would bring them happiness. But what, in fact, does is having a cause, having a passion. And that's really what gives life's true meaning.":says "There is no fulfillment in things whatsoever. And I think one of the reasons that depression reigns supreme amongst the rich and famous is some of them thought that maybe those things would bring them happiness. But what, in fact, does is having a cause, having a passion. And that's really what gives life's true meaning.":someone say "There is no fulfillment in things whatsoever. And I think one of the reasons that depression reigns supreme amongst the rich and famous is some of them thought that maybe those things would bring them happiness. But what, in fact, does is having a cause, having a passion. And that's really what gives life's true meaning."]
+
+
+    4.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Happiness doesn't result from what we get, but from what we give.":says "Happiness doesn't result from what we get, but from what we give.":someone say "Happiness doesn't result from what we get, but from what we give."]
+
+    5.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I'm probably never going to be politically correct because I'm not a politician. I don't want to be a politician. Because politicians do what is politically expedient, I want to do what's right.":says "I'm probably never going to be politically correct because I'm not a politician. I don't want to be a politician. Because politicians do what is politically expedient, I want to do what's right.":someone say "I'm probably never going to be politically correct because I'm not a politician. I don't want to be a politician. Because politicians do what is politically expedient, I want to do what's right."]
+
+    6.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "One of the great truths of life: I did not do it alone. I had help along the way.":says "One of the great truths of life: I did not do it alone. I had help along the way.":someone say "One of the great truths of life: I did not do it alone. I had help along the way."]
+
+
+    7.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Whatever direction we choose, if we can realize that every hurdle we jump strengthens and prepares us for the next one, we're already on the way to success.":says "Whatever direction we choose, if we can realize that every hurdle we jump strengthens and prepares us for the next one, we're already on the way to success.":someone say "Whatever direction we choose, if we can realize that every hurdle we jump strengthens and prepares us for the next one, we're already on the way to success."]
+
+     8.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Reading is the way out of ignorance, and the road to achievement.":says "Reading is the way out of ignorance, and the road to achievement.":someone say "Reading is the way out of ignorance, and the road to achievement."]
+
+
+    9.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "It is not where we have come from but where we are going that counts!":says "It is not where we have come from but where we are going that counts!":someone say "It is not where we have come from but where we are going that counts!"]
+
+   10.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Be nice to everybody. You meet the same people going up as you meet going down.":says "Be nice to everybody. You meet the same people going up as you meet going down.":someone say "Be nice to everybody. You meet the same people going up as you meet going down."]
+
+
+    1.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "My own personal theory is that Joseph built the pyramids to store grain.":says "My own personal theory is that Joseph built the pyramids to store grain.":someone say "My own personal theory is that Joseph built the pyramids to store grain."]
+
+     2.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Responsible human beings must be concerned about our surroundings and what we will pass on to future generations. However, to use climate change as an excuse not to develop our God given resources makes little sense.":says "Responsible human beings must be concerned about our surroundings and what we will pass on to future generations. However, to use climate change as an excuse not to develop our God given resources makes little sense.":someone say "Responsible human beings must be concerned about our surroundings and what we will pass on to future generations. However, to use climate change as an excuse not to develop our God given resources makes little sense."]
+
+    3.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I actually have something I would use the Department of Education to do. It would be to monitor our institutions of higher education for extreme political bias and deny federal funding if it exists.":says "I actually have something I would use the Department of Education to do. It would be to monitor our institutions of higher education for extreme political bias and deny federal funding if it exists.":someone say "I actually have something I would use the Department of Education to do. It would be to monitor our institutions of higher education for extreme political bias and deny federal funding if it exists."]
+
+  4.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "We'd be Cuba if there were no Fox News.":says "We'd be Cuba if there were no Fox News.":someone say "We'd be Cuba if there were no Fox News."]
+
+  5.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Putin is a one horse country, Oil and energy.":says "Putin is a one horse country, Oil and energy.":someone say "Putin is a one horse country, Oil and energy."]
+
+6.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Education is a fundamental principle of what made America a success. We can't afford to throw any young people away.":says "Education is a fundamental principle of what made America a success. We can't afford to throw any young people away.":someone say "Education is a fundamental principle of what made America a success. We can't afford to throw any young people away."]
+
+
+7.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I have sunshine in my heart regardless of conditions around me.":says "I have sunshine in my heart regardless of conditions around me.":someone say "I have sunshine in my heart regardless of conditions around me."]
+
+ 8.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "It wasn't that I had to be first in everything, but I should have been number one.":says "It wasn't that I had to be first in everything, but I should have been number one.":someone say "It wasn't that I had to be first in everything, but I should have been number one."]
+
+9.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Do not underestimate the importance of feeling special.":says "Do not underestimate the importance of feeling special.":someone say "Do not underestimate the importance of feeling special."]
+
+10.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Odds that you will die at some point in your life, 1 in 1.":says "Odds that you will die at some point in your life, 1 in 1.":someone say "Odds that you will die at some point in your life, 1 in 1."]
+
+
+
+	
+	[BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS:SKIN:FAT:MUSCLE:BONE:CARTILAGE]
+	[BODY_DETAIL_PLAN:HEAD_HAIR_TISSUE_LAYERS]		[BODY_DETAIL_PLAN:FACIAL_HAIR_TISSUE_LAYERS]
+	[USE_TISSUE_TEMPLATE:EYEBROW:EYEBROW_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:HEAD:EYEBROW:ABOVE:BY_CATEGORY:EYE]
+	[USE_TISSUE_TEMPLATE:EYELASH:EYELASH_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:EYELID:EYELASH:FRONT]
+	[USE_MATERIAL_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:FINGER:NAIL:FRONT]
+	[TISSUE_LAYER:BY_CATEGORY:TOE:NAIL:FRONT]
+	[SELECT_TISSUE_LAYER:HEART:BY_CATEGORY:HEART]
+	 [PLUS_TISSUE_LAYER:SKIN:BY_CATEGORY:THROAT]
+		[TL_MAJOR_ARTERIES]
+	[BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RELSIZES]
+
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+		 [PLUS_TL_GROUP:BY_CATEGORY:HEAD:EYEBROW]
+		 [PLUS_TL_GROUP:BY_CATEGORY:EYELID:EYELASH]
+
+	[TL_COLOR_MODIFIER:MOTTLED_GRAY_BLACK:1]
+				[TLCM_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+			[APP_MOD_NOUN:hair:SINGULAR]
+				[APP_MOD_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+			[TISSUE_STYLE_UNIT:HAIR:STANDARD_HAIR_SHAPINGS]
+				[TSU_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
+	[TL_COLOR_MODIFIER:BROWN:1]
+				[TLCM_NOUN:skin:SINGULAR]
+			[TISSUE_LAYER_APPEARANCE_MODIFIER:WRINKLY:0:0:0:0:0:0:0]
+				[APP_MOD_RATE:1:YEARLY:0:100:30:0:NO_END]
+				[APP_MOD_NOUN:skin:SINGULAR]
+				[APP_MOD_DESC_RANGE:0:0:0:1:25:50][ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:punch:punches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:MAIN]
+	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]
+		[ATTACK_SKILL:STANCE_STRIKE]
+		[ATTACK_VERB:kick:kicks]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_BAD_MULTIATTACK]
+	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:GRASP:BY_CATEGORY:FINGER:NAIL]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:scratch:scratches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PRIORITY:SECOND]
+	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]
+		[ATTACK_SKILL:BITE]
+		[ATTACK_VERB:bite:bites]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_CANLATCH]
+	[ATTACK:PUNCH:BODYPART:BY_CATEGORY:HEAD]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:headbutt:headbutts]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_PRIORITY:SECOND]
+
+
+[CASTE:JEBBUSH]
+		[MALE]
+[CASTE_NAME:Jeb Bush:Jeb Bushes:Jeb!]
+	[CASTE_TILE:'J'][CASTE_COLOR:4:0:1]
+[DESCRIPTION:its jeb bush. please clap.]
+		[BODY:HUMANOID_NECK:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:HUMANOID_JOINTS:THROAT:NECK:SPINE:BRAIN:SKULL:5FINGERS:5TOES:MOUTH:TONGUE:FACIAL_FEATURES:TEETH:RIBCAGE]		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
+
+	1.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Ideas matter, policy matters.":says "Ideas matter, policy matters.":someone say "Ideas matter, policy matters."]
+
+2.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "You know what? As it relates to my brother, there is one thing I know for sure, he kept us safe.":says "You know what? As it relates to my brother, there is one thing I know for sure, he kept us safe.":someone say "You know what? As it relates to my brother, there is one thing I know for sure, he kept us safe."]
+
+3. [SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Whatever his views are this morning, they might change this afternoon, and they were different than they were last night, and they’ll be different tomorrow.":says "Whatever his views are this morning, they might change this afternoon, and they were different than they were last night, and they’ll be different tomorrow.":someone say "Whatever his views are this morning, they might change this afternoon, and they were different than they were last night, and they’ll be different tomorrow."]
+
+4.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I told my brother we were going to deliver Florida, we're going to keep that promise, aren't we?":says "I told my brother we were going to deliver Florida, we're going to keep that promise, aren't we?":someone say "I told my brother we were going to deliver Florida, we're going to keep that promise, aren't we?"]
+
+5.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I think Republicans really need to be disciplined, to stay focused on sustained economic growth.":says "I think Republicans really need to be disciplined, to stay focused on sustained economic growth":someone say "I think Republicans really need to be disciplined, to stay focused on sustained economic growth"]
+
+6.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Who among us has never looked up into the heavens on a starlit night, lost in wonder at the vastness of space and the beauty of the stars?":says "Who among us has never looked up into the heavens on a starlit night, lost in wonder at the vastness of space and the beauty of the stars?":someone say "Who among us has never looked up into the heavens on a starlit night, lost in wonder at the vastness of space and the beauty of the stars?"]
+
+7.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I don't wake up each morning saying, 'Oh, wow, it's me. I think I'm the cat's meow. I'm the best.'":says "I don't wake up each morning saying, 'Oh, wow, it's me. I think I'm the cat's meow. I'm the best.'":someone say "I don't wake up each morning saying, 'Oh, wow, it's me. I think I'm the cat's meow. I'm the best.'"]
+
+ 8.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "It's important to build trust if you're trying to deal with big things.":says "It's important to build trust if you're trying to deal with big things.":someone say "It's important to build trust if you're trying to deal with big things."]
+
+9.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Leaders lead. They don't divide, they don't create a climate that is poisonous.":says "Leaders lead. They don't divide, they don't create a climate that is poisonous.":someone say "Leaders lead. They don't divide, they don't create a climate that is poisonous."]
+
+10.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I don't think a party can aspire to be the majority party if it's the old white guy party.":says "I don't think a party can aspire to be the majority party if it's the old white guy party.":someone say "I don't think a party can aspire to be the majority party if it's the old white guy party."]
+
+1.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Jeb!":says "Jeb!":someone say "Jeb!"]
+
+2.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Please clap.":says "Please clap.":someone say "Please clap."]
+
+3.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "You have to maintain your principles but have a broader appeal.":says "You have to maintain your principles but have a broader appeal.":someone say "You have to maintain your principles but have a broader appeal."]
+
+4.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I would say national security is work in progress.":says "I would say national security is work in progress.":someone say "I would say national security is work in progress."]
+
+5.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I'd be wary of simple solutions to complex problems.":says "I'd be wary of simple solutions to complex problems.":someone say "I'd be wary of simple solutions to complex problems."]
+
+6.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I don't know if I'm a national education figure.":says "I don't know if I'm a national education figure.":someone say "I don't know if I'm a national education figure."]
+
+7.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "As governor, I saw the link between economic prosperity and the ability to acquire knowledge.":says "As governor, I saw the link between economic prosperity and the ability to acquire knowledge.":someone say "As governor, I saw the link between economic prosperity and the ability to acquire knowledge."]
+
+8.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "It's been painful to see the people that you love be attacked when you know it's not fair or true.":says "It's been painful to see the people that you love be attacked when you know it's not fair or true.":someone say "It's been painful to see the people that you love be attacked when you know it's not fair or true."]
+
+9.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I support high academic standards. Period.":says "I support high academic standards. Period.":someone say "I support high academic standards. Period."]
+
+10.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "You focus on the things that you can control, and that's what I'm doing.":says "You focus on the things that you can control, and that's what I'm doing.":someone say "You focus on the things that you can control, and that's what I'm doing."]
+
+	
+	[BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS:SKIN:FAT:MUSCLE:BONE:CARTILAGE]
+	[BODY_DETAIL_PLAN:HEAD_HAIR_TISSUE_LAYERS]
+	[USE_TISSUE_TEMPLATE:EYEBROW:EYEBROW_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:HEAD:EYEBROW:ABOVE:BY_CATEGORY:EYE]
+	[USE_TISSUE_TEMPLATE:EYELASH:EYELASH_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:EYELID:EYELASH:FRONT]
+	[USE_MATERIAL_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:FINGER:NAIL:FRONT]
+	[TISSUE_LAYER:BY_CATEGORY:TOE:NAIL:FRONT]
+	[SELECT_TISSUE_LAYER:HEART:BY_CATEGORY:HEART]
+	 [PLUS_TISSUE_LAYER:SKIN:BY_CATEGORY:THROAT]
+		[TL_MAJOR_ARTERIES]
+	[BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RELSIZES]
+
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+		 [PLUS_TL_GROUP:BY_CATEGORY:HEAD:EYEBROW]
+		 [PLUS_TL_GROUP:BY_CATEGORY:EYELID:EYELASH]
+	[TL_COLOR_MODIFIER:TAN:1]
+				[TLCM_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+			[APP_MOD_NOUN:hair:SINGULAR]
+				[APP_MOD_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+			[TISSUE_STYLE_UNIT:HAIR:STANDARD_HAIR_SHAPINGS]
+				[TSU_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
+	[TL_COLOR_MODIFIER:WHITE:1]
+				[TLCM_NOUN:skin:SINGULAR]
+			[TISSUE_LAYER_APPEARANCE_MODIFIER:WRINKLY:0:0:0:0:0:0:0]
+				[APP_MOD_RATE:1:YEARLY:0:100:30:0:NO_END]
+				[APP_MOD_NOUN:skin:SINGULAR]
+				[APP_MOD_DESC_RANGE:0:0:0:1:25:50][ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:punch:punches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:MAIN]
+	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]
+		[ATTACK_SKILL:STANCE_STRIKE]
+		[ATTACK_VERB:kick:kicks]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_BAD_MULTIATTACK]
+	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:GRASP:BY_CATEGORY:FINGER:NAIL]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:scratch:scratches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PRIORITY:SECOND]
+	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]
+		[ATTACK_SKILL:BITE]
+		[ATTACK_VERB:bite:bites]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_CANLATCH]
+	[ATTACK:PUNCH:BODYPART:BY_CATEGORY:HEAD]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:headbutt:headbutts]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_PRIORITY:SECOND]
+
+
+[CASTE:JIMGILMORE]THE WORLD'S GREATEST JIM GILMORE SIMULATION OF ALL TIME.
+		[MALE]
+[CASTE_NAME:Jim Gilmore:Jim Gilmores:Jim Gilmore]
+	[CASTE_TILE:'G'][CASTE_COLOR:4:0:1]
+[DESCRIPTION:The politician Jim Gilmore has come! Beware its unremarkablity!]
+		[BODY:HUMANOID_NECK:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:HUMANOID_JOINTS:THROAT:NECK:SPINE:BRAIN:SKULL:5FINGERS:5TOES:MOUTH:TONGUE:FACIAL_FEATURES:TEETH:RIBCAGE]		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
+
+	1.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I think this is a going to be a long race, I think that it's an opportunity to appear multiple times, to be in additional debates.":says "I think this is a going to be a long race, I think that it's an opportunity to appear multiple times, to be in additional debates.":someone say "I think this is a going to be a long race, I think that it's an opportunity to appear multiple times, to be in additional debates."]
+
+2.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "We have to have a third way, all the foreign policy discussion in the U.S. is centered around the two extremes.":says "We have to have a third way, all the foreign policy discussion in the U.S. is centered around the two extremes.":someone say "We have to have a third way, all the foreign policy discussion in the U.S. is centered around the two extremes."]
+
+3.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "If the rules of creativity are the norm for a company, creative people will be the norm.":says "If the rules of creativity are the norm for a company, creative people will be the norm.":someone say "If the rules of creativity are the norm for a company, creative people will be the norm."]
+
+4.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "It's not enough to tell people to be creative, they need to know how, and what to create.":says "It's not enough to tell people to be creative, they need to know how, and what to create.":someone say "It's not enough to tell people to be creative, they need to know how, and what to create."]
+
+ 5.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Consumers view of you is not about how they compare you to other banks. It's about how they compare you to all of the other businesses they experience.":says "Consumers view of you is not about how they compare you to other banks. It's about how they compare you to all of the other businesses they experience.":someone say "Consumers view of you is not about how they compare you to other banks. It's about how they compare you to all of the other businesses they experience."]
+
+6.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Tom Brady was suspended 4 games for hiding evidence. Hillary should have to sit out first 4 primaries.":says "Tom Brady was suspended 4 games for hiding evidence. Hillary should have to sit out first 4 primaries.":someone say "Tom Brady was suspended 4 games for hiding evidence. Hillary should have to sit out first 4 primaries."]
+
+7.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I will continue to express my concerns about the dangers of electing someone who has pledged to continue Obama's disastrous policies, and, I will continue to do everything I can to ensure that our next President is a free enterprise Republican who will restore our nation to greatness and keep our citizens safe.":says "I will continue to express my concerns about the dangers of electing someone who has pledged to continue Obama's disastrous policies, and, I will continue to do everything I can to ensure that our next President is a free enterprise Republican who will restore our nation to greatness and keep our citizens safe.":someone say "I will continue to express my concerns about the dangers of electing someone who has pledged to continue Obama's disastrous policies, and, I will continue to do everything I can to ensure that our next President is a free enterprise Republican who will restore our nation to greatness and keep our citizens safe."]
+
+8.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "My goal was to focus on the importance of this election as a real turning point, and to emphasize the dangers of continuing on a road that will further undermine America's economy and weaken our national security.":says "My goal was to focus on the importance of this election as a real turning point, and to emphasize the dangers of continuing on a road that will further undermine America's economy and weaken our national security.":someone say "My goal was to focus on the importance of this election as a real turning point, and to emphasize the dangers of continuing on a road that will further undermine America's economy and weaken our national security."]
+
+9.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I want to run for office in order to help people get back to work again, get wages improving, get people off this part time gig that they're on, get people off of food stamps...":says "I want to run for office in order to help people get back to work again, get wages improving, get people off this part time gig that they're on, get people off of food stamps...":someone say "I want to run for office in order to help people get back to work again, get wages improving, get people off this part time gig that they're on, get people off of food stamps..."]
+
+10.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "We have to have a third way, all the foreign policy discussion in the U.S. is centered around the two extremes.":says "We have to have a third way, all the foreign policy discussion in the U.S. is centered around the two extremes.":someone say "We have to have a third way, all the foreign policy discussion in the U.S. is centered around the two extremes."]
+
+1.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "For me, it still remains a positive experience. I was happy that I ran, it's important to offer the right kinds of thinking of policy and programs for the people of the United States, that's what comes through in a presidential campaign.":says "For me, it still remains a positive experience. I was happy that I ran, it's important to offer the right kinds of thinking of policy and programs for the people of the United States, that's what comes through in a presidential campaign.":someone say "For me, it still remains a positive experience. I was happy that I ran, it's important to offer the right kinds of thinking of policy and programs for the people of the United States, that's what comes through in a presidential campaign."]
+
+2.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Tell the President to stand up to our enemies, not cower to them or make excuses for them!":says "Tell the President to stand up to our enemies, not cower to them or make excuses for them!":someone say "Tell the President to stand up to our enemies, not cower to them or make excuses for them!"]
+
+3.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "You are not guilty of anything until you are charged and tried.":says "You are not guilty of anything until you are charged and tried.":someone say "You are not guilty of anything until you are charged and tried."]
+
+4.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "We're sending a message to the other people in the Middle East who have been traditionally our allies and are telling them that in 15 years, at the very least, that Iraq's going to be a legitimate nuclear state.":says "We're sending a message to the other people in the Middle East who have been traditionally our allies and are telling them that in 15 years, at the very least, that Iraq's going to be a legitimate nuclear state.":someone say "We're sending a message to the other people in the Middle East who have been traditionally our allies and are telling them that in 15 years, at the very least, that Iraq's going to be a legitimate nuclear state."]
+
+5.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "More banking oversight, even if it means bigger government.":says "More banking oversight, even if it means bigger government.":someone say "More banking oversight, even if it means bigger government."]
+
+6.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I delivered a balanced budget, no deficit when I ended term.":says "I delivered a balanced budget, no deficit when I ended term.":someone say "I delivered a balanced budget, no deficit when I ended term."]
+
+7.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I do not support quotas, but all during my career I have worked to create opportunities for minorities.":says "I do not support quotas, but all during my career I have worked to create opportunities for minorities.":someone say "I do not support quotas, but all during my career I have worked to create opportunities for minorities."]
+
+8.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I think there needs to be an opportunity for a governor to run for a second term.":says "I think there needs to be an opportunity for a governor to run for a second term.":someone say "I think there needs to be an opportunity for a governor to run for a second term."]
+
+9.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I never believed that surrendering the executive power should be a condition of getting the second term. The second term should stand on its own feet.":says "I never believed that surrendering the executive power should be a condition of getting the second term. The second term should stand on its own feet.":someone say "I never believed that surrendering the executive power should be a condition of getting the second term. The second term should stand on its own feet."]
+
+10.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "The company could offer a birthday venue at its distribution center by designing a room with a glass wall looking out to the warehouse.":says "The company could offer a birthday venue at its distribution center by designing a room with a glass wall looking out to the warehouse.":someone say "The company could offer a birthday venue at its distribution center by designing a room with a glass wall looking out to the warehouse."]
+
+
+
+	
+	[BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS:SKIN:FAT:MUSCLE:BONE:CARTILAGE]
+	[BODY_DETAIL_PLAN:HEAD_HAIR_TISSUE_LAYERS]
+	[USE_TISSUE_TEMPLATE:EYEBROW:EYEBROW_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:HEAD:EYEBROW:ABOVE:BY_CATEGORY:EYE]
+	[USE_TISSUE_TEMPLATE:EYELASH:EYELASH_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:EYELID:EYELASH:FRONT]
+	[USE_MATERIAL_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:FINGER:NAIL:FRONT]
+	[TISSUE_LAYER:BY_CATEGORY:TOE:NAIL:FRONT]
+	[SELECT_TISSUE_LAYER:HEART:BY_CATEGORY:HEART]
+	 [PLUS_TISSUE_LAYER:SKIN:BY_CATEGORY:THROAT]
+		[TL_MAJOR_ARTERIES]
+	[BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RELSIZES]
+
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+		 [PLUS_TL_GROUP:BY_CATEGORY:HEAD:EYEBROW]
+		 [PLUS_TL_GROUP:BY_CATEGORY:EYELID:EYELASH]
+	[TL_COLOR_MODIFIER:TAN:1]
+				[TLCM_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+			[APP_MOD_NOUN:hair:SINGULAR]
+				[APP_MOD_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+			[TISSUE_STYLE_UNIT:HAIR:STANDARD_HAIR_SHAPINGS]
+				[TSU_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
+	[TL_COLOR_MODIFIER:WHITE:1]
+				[TLCM_NOUN:skin:SINGULAR]
+			[TISSUE_LAYER_APPEARANCE_MODIFIER:WRINKLY:0:0:0:0:0:0:0]
+				[APP_MOD_RATE:1:YEARLY:0:100:30:0:NO_END]
+				[APP_MOD_NOUN:skin:SINGULAR]
+				[APP_MOD_DESC_RANGE:0:0:0:1:25:50][ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:punch:punches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:MAIN]
+	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]
+		[ATTACK_SKILL:STANCE_STRIKE]
+		[ATTACK_VERB:kick:kicks]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_BAD_MULTIATTACK]
+	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:GRASP:BY_CATEGORY:FINGER:NAIL]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:scratch:scratches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PRIORITY:SECOND]
+	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]
+		[ATTACK_SKILL:BITE]
+		[ATTACK_VERB:bite:bites]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_CANLATCH]
+	[ATTACK:PUNCH:BODYPART:BY_CATEGORY:HEAD]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:headbutt:headbutts]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_PRIORITY:SECOND]
+
+
+[CASTE:CHRISCHRISTIE]
+		[MALE]
+[CASTE_NAME:Chris Christie:Chris Christies:Chris Christie]
+	[CASTE_TILE:'C'][CASTE_COLOR:4:0:1]
+[DESCRIPTION:The politician Chris Christie has come! Beware its closed bridges!]
+		[BODY:HUMANOID_NECK:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:HUMANOID_JOINTS:THROAT:NECK:SPINE:BRAIN:SKULL:5FINGERS:5TOES:MOUTH:TONGUE:FACIAL_FEATURES:TEETH:RIBCAGE]		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
+
+	1.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "First off it’s none of your business. I don’t ask you where you send your kids to school. Don’t bother me about where I send mine.":says "First off it’s none of your business. I don’t ask you where you send your kids to school. Don’t bother me about where I send mine.":someone say "First off it’s none of your business. I don’t ask you where you send your kids to school. Don’t bother me about where I send mine"]
+
+2.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "You people disappoint me on Tuesday, you don’t do what you’re supposed to for Mitt Romney on Tuesday, I will be back, Jersey-style, people. I will be back.":says "You people disappoint me on Tuesday, you don’t do what you’re supposed to for Mitt Romney on Tuesday, I will be back, Jersey-style, people. I will be back.":someone say "You people disappoint me on Tuesday, you don’t do what you’re supposed to for Mitt Romney on Tuesday, I will be back, Jersey-style, people. I will be back."]
+
+3.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Elections have consequences. One of those consequences are judicial appointments.":says "Elections have consequences. One of those consequences are judicial appointments.":someone say "Elections have consequences. One of those consequences are judicial appointments."]
+
+4.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I’m never going to change my tune.":says "I’m never going to change my tune.":someone say "I’m never going to change my tune."]
+
+5.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Cry me a river.":says "Cry me a river.":someone say "Cry me a river."]
+
+6.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I have vetoed a 50-caliber rifle ban. I have vetoed a reduction this clip size.":says "I have vetoed a 50-caliber rifle ban. I have vetoed a reduction this clip size.":someone say "I have vetoed a 50-caliber rifle ban. I have vetoed a reduction this clip size."]
+
+7.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "So let’s set the facts straight.":says "So let’s set the facts straight.":someone say "So let’s set the facts straight."]
+	
+
+8.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Common Core has been eliminated in New Jersey.":says "Common Core has been eliminated in New Jersey.":someone say "Common Core has been eliminated in New Jersey."]
+
+9.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Qualified appointees should be confirmed and deserve bi-partisan support.":says "Qualified appointees should be confirmed and deserve bi-partisan support.":someone say "Qualified appointees should be confirmed and deserve bi-partisan support."]
+
+10.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "They’re from New York. Snooki is from Poughkeepsie, The Situation is from Staten Island. They parachuted these losers into New Jersey. And they want to make all of you believe that they’re in New Jersey. They’re not.":says "They’re from New York. Snooki is from Poughkeepsie, The Situation is from Staten Island. They parachuted these losers into New Jersey. And they want to make all of you believe that they’re in New Jersey. They’re not.":someone say "They’re from New York. Snooki is from Poughkeepsie, The Situation is from Staten Island. They parachuted these losers into New Jersey. And they want to make all of you believe that they’re in New Jersey. They’re not."]
+
+1.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I vetoed a statewide I.D. system for gun owners and I pardoned, six out of state folks who came through our state and were arrested for owning a gun legally in another state so they never have to face charges.":says "I vetoed a statewide I.D. system for gun owners and I pardoned, six out of state folks who came through our state and were arrested for owning a gun legally in another state so they never have to face charges.":someone say "I vetoed a statewide I.D. system for gun owners and I pardoned, six out of state folks who came through our state and were arrested for owning a gun legally in another state so they never have to face charges."]
+
+2.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I like Marco Rubio. He’s a good guy, a smart guy, and he would be a heck of a lot better president than Hillary Rodham Clinton would ever be.":says "I like Marco Rubio. He’s a good guy, a smart guy, and he would be a heck of a lot better president than Hillary Rodham Clinton would ever be.":someone say "I like Marco Rubio. He’s a good guy, a smart guy, and he would be a heck of a lot better president than Hillary Rodham Clinton would ever be."]
+
+3.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I stood on the stage and watched Marco in rather indignantly, look at Governor Bush and say, someone told you that because we’re running for the same office, that criticizing me will get you to that office. It appears that the same someone who has been whispering in old Marco’s ear too.":says "I stood on the stage and watched Marco in rather indignantly, look at Governor Bush and say, someone told you that because we’re running for the same office, that criticizing me will get you to that office. It appears that the same someone who has been whispering in old Marco’s ear too.":someone say "I stood on the stage and watched Marco in rather indignantly, look at Governor Bush and say, someone told you that because we’re running for the same office, that criticizing me will get you to that office. It appears that the same someone who has been whispering in old Marco’s ear too."]
+
+4.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Man up and say I’m fat.":says "Man up and say I’m fat.":someone say "Man up and say I’m fat."]
+
+5.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Lots of people will say lots of different things about me in this campaign and others, but the one thing they’ve never said about me is that I’m misunderstood.":says "Lots of people will say lots of different things about me in this campaign and others, but the one thing they’ve never said about me is that I’m misunderstood.":someone say "Lots of people will say lots of different things about me in this campaign and others, but the one thing they’ve never said about me is that I’m misunderstood."]
+
+6.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "We are not the world’s policeman, but we need to stand up and be ready.":says "We are not the world’s policeman, but we need to stand up and be ready.":someone say "We are not the world’s policeman, but we need to stand up and be ready."]
+
+7.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "The president wants to do things without working with his Congress, without working with the legislature, and without getting the consent of the American people.":says "The president wants to do things without working with his Congress, without working with the legislature, and without getting the consent of the American people.":someone say "The president wants to do things without working with his Congress, without working with the legislature, and without getting the consent of the American people."]
+
+8.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I don’t think the founders put the Second Amendment as number two by accident.":says "I don’t think the founders put the Second Amendment as number two by accident.":someone say "I don’t think the founders put the Second Amendment as number two by accident."]
+
+9.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Maria, you look at what this president and his secretary of state, Secretary of State Clinton, has done to get us in this spot.":says "Maria, you look at what this president and his secretary of state, Secretary of State Clinton, has done to get us in this spot.":someone say "Maria, you look at what this president and his secretary of state, Secretary of State Clinton, has done to get us in this spot."]
+
+10.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "The drive by attack at the beginning with incorrect and incomplete information and then the memorized 25 second speech.":says "The drive by attack at the beginning with incorrect and incomplete information and then the memorized 25 second speech":someone say "The drive by attack at the beginning with incorrect and incomplete information and then the memorized 25 second speech"]
+
+
+	[BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS:SKIN:FAT:MUSCLE:BONE:CARTILAGE]
+	[BODY_DETAIL_PLAN:HEAD_HAIR_TISSUE_LAYERS]
+	[USE_TISSUE_TEMPLATE:EYEBROW:EYEBROW_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:HEAD:EYEBROW:ABOVE:BY_CATEGORY:EYE]
+	[USE_TISSUE_TEMPLATE:EYELASH:EYELASH_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:EYELID:EYELASH:FRONT]
+	[USE_MATERIAL_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:FINGER:NAIL:FRONT]
+	[TISSUE_LAYER:BY_CATEGORY:TOE:NAIL:FRONT]
+	[SELECT_TISSUE_LAYER:HEART:BY_CATEGORY:HEART]
+	 [PLUS_TISSUE_LAYER:SKIN:BY_CATEGORY:THROAT]
+		[TL_MAJOR_ARTERIES]
+	[BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RELSIZES]
+
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+		 [PLUS_TL_GROUP:BY_CATEGORY:HEAD:EYEBROW]
+		 [PLUS_TL_GROUP:BY_CATEGORY:EYELID:EYELASH]
+	[TL_COLOR_MODIFIER:BROWN:1]
+				[TLCM_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+			[APP_MOD_NOUN:hair:SINGULAR]
+				[APP_MOD_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+			[TISSUE_STYLE_UNIT:HAIR:STANDARD_HAIR_SHAPINGS]
+				[TSU_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
+	[TL_COLOR_MODIFIER:WHITE:1]
+				[TLCM_NOUN:skin:SINGULAR]
+			[TISSUE_LAYER_APPEARANCE_MODIFIER:WRINKLY:0:0:0:0:0:0:0]
+				[APP_MOD_RATE:1:YEARLY:0:100:30:0:NO_END]
+				[APP_MOD_NOUN:skin:SINGULAR]
+				[APP_MOD_DESC_RANGE:0:0:0:1:25:50][ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:punch:punches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:MAIN]
+	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]
+		[ATTACK_SKILL:STANCE_STRIKE]
+		[ATTACK_VERB:kick:kicks]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_BAD_MULTIATTACK]
+	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:GRASP:BY_CATEGORY:FINGER:NAIL]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:scratch:scratches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PRIORITY:SECOND]
+	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]
+		[ATTACK_SKILL:BITE]
+		[ATTACK_VERB:bite:bites]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_CANLATCH]
+	[ATTACK:PUNCH:BODYPART:BY_CATEGORY:HEAD]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:headbutt:headbutts]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_PRIORITY:SECOND]
+
+
+[CASTE:CARLYFIORINA]
+		[FEMALE][MULTIPLE_LITTER_RARE]
+[CASTE_NAME:Carly Fiorina:Carly Fiorinas:Carly Fiorina]
+	[CASTE_TILE:'F'][CASTE_COLOR:4:0:1]
+[DESCRIPTION:The politician Carly Fiorina has come! Beware its vice presidencies of doom!]
+		[BODY:HUMANOID_NECK:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:HUMANOID_JOINTS:THROAT:NECK:SPINE:BRAIN:SKULL:5FINGERS:5TOES:MOUTH:TONGUE:FACIAL_FEATURES:TEETH:RIBCAGE]
+
+	1.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Leadership is all about unlocking the potential in others.":says "Leadership is all about unlocking the potential in others.":someone say "Leadership is all about unlocking the potential in others."]
+	
+2.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Donald Trump is Hillary Clinton’s Christmas gift wrapped up under a tree. I am the lump of coal in her stocking.":says "Donald Trump is Hillary Clinton’s Christmas gift wrapped up under a tree. I am the lump of coal in her stocking.":someone say "Donald Trump is Hillary Clinton’s Christmas gift wrapped up under a tree. I am the lump of coal in her stocking."]
+
+3.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "We have to compete for jobs as a nation. Our competitiveness as a nation is not inevitable. It will not just happen.":says "We have to compete for jobs as a nation. Our competitiveness as a nation is not inevitable. It will not just happen.":someone say "We have to compete for jobs as a nation. Our competitiveness as a nation is not inevitable. It will not just happen."]
+
+4.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "When people get to know me, they tend to support me. That's what you see in the polls.":says "When people get to know me, they tend to support me. That's what you see in the polls.":someone say "When people get to know me, they tend to support me. That's what you see in the polls."]
+
+5.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "When I think of something that really is me, that I'm proud of, is honestly, I would have to say, I've never sold my soul along the way... All those things, you're selling your soul, and I don't think I have.":says "When I think of something that really is me, that I'm proud of, is honestly, I would have to say, I've never sold my soul along the way... All those things, you're selling your soul, and I don't think I have.":someone say "When I think of something that really is me, that I'm proud of, is honestly, I would have to say, I've never sold my soul along the way... All those things, you're selling your soul, and I don't think I have."]
+
+6.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I think faith gives us humility, and empathy and optimism, and I think those are important things.":says "I think faith gives us humility, and empathy and optimism, and I think those are important things.":someone say "I think faith gives us humility, and empathy and optimism, and I think those are important things."]
+
+7.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I have to stand up for myself.":says "I have to stand up for myself.":someone say "I have to stand up for myself."]
+
+8.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "If you’ve had to overcome an obstacle or insecurity or fear... genuinely you can bet on that person because they have gathered themselves and found through their inner strength, they have determination, they have grit.":says "If you’ve had to overcome an obstacle or insecurity or fear... genuinely you can bet on that person because they have gathered themselves and found through their inner strength, they have determination, they have grit.":someone say "If you’ve had to overcome an obstacle or insecurity or fear... genuinely you can bet on that person because they have gathered themselves and found through their inner strength, they have determination, they have grit."]
+
+9.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Everyone truly does have God given gifts... Find them and use them, and don't let anyone else tell you that you are less than who you are.":says "Everyone truly does have God given gifts... Find them and use them, and don't let anyone else tell you that you are less than who you are.":someone say "Everyone truly does have God given gifts... Find them and use them, and don't let anyone else tell you that you are less than who you are."]
+
+10.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Childhood is precious... Hardest part of growing up? Is growing up, I think.":says "Childhood is precious... Hardest part of growing up? Is growing up, I think.":someone say "Childhood is precious... Hardest part of growing up? Is growing up, I think."]
+
+1.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Trump says a lot of things that are crazy... Trump's a moron.":says "Trump says a lot of things that are crazy... Trump's a moron.":someone say "Trump says a lot of things that are crazy... Trump's a moron."]
+
+2.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Leadership comes in small acts as well as bold strokes.":says "Leadership comes in small acts as well as bold strokes.":someone say "Leadership comes in small acts as well as bold strokes."]
+
+3.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "My mother taught me about the power of inspiration and courage, and she did it with a strength and a passion that I wish could be bottled.":says "My mother taught me about the power of inspiration and courage, and she did it with a strength and a passion that I wish could be bottled.":someone say "My mother taught me about the power of inspiration and courage, and she did it with a strength and a passion that I wish could be bottled."]
+
+4.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "You have to master not only the art of listening to your head, you must also master listening to your heart and listening to your gut.":says "You have to master not only the art of listening to your head, you must also master listening to your heart and listening to your gut.":someone say "You have to master not only the art of listening to your head, you must also master listening to your heart and listening to your gut."]
+
+5.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Love what you do, or don't do it.":says "Love what you do, or don't do it.":someone say "Love what you do, or don't do it."]
+
+6.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Whatever the consequences of staying true to yourself, they're much less than the consequences of selling your soul.":says "Whatever the consequences of staying true to yourself, they're much less than the consequences of selling your soul.":someone say "Whatever the consequences of staying true to yourself, they're much less than the consequences of selling your soul."]
+
+7.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Do not be afraid to make decisions, do not be afraid to make mistakes.":says "Do not be afraid to make decisions, do not be afraid to make mistakes.":someone say "Do not be afraid to make decisions, do not be afraid to make mistakes."]
+
+8.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "We help the middle class when we unburden them from the very policies that Hillary Clinton would double down on.":says "We help the middle class when we unburden them from the very policies that Hillary Clinton would double down on.":someone say "We help the middle class when we unburden them from the very policies that Hillary Clinton would double down on."]
+
+
+9.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "The data is clear: If you give a woman an opportunity, she will make a huge difference.":says "The data is clear: If you give a woman an opportunity, she will make a huge difference.":someone say "The data is clear: If you give a woman an opportunity, she will make a huge difference."]
+
+10.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Margaret Thatcher once said, "If you want something talked about, ask a man, if you want something done, ask a woman."":says "Margaret Thatcher once said, "If you want something talked about, ask a man, if you want something done, ask a woman."":someone say "Margaret Thatcher once said, "If you want something talked about, ask a man, if you want something done, ask a woman.""]
+
+
+
+
+
+	[BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS:SKIN:FAT:MUSCLE:BONE:CARTILAGE]
+	[BODY_DETAIL_PLAN:HEAD_HAIR_TISSUE_LAYERS]
+	[USE_TISSUE_TEMPLATE:EYEBROW:EYEBROW_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:HEAD:EYEBROW:ABOVE:BY_CATEGORY:EYE]
+	[USE_TISSUE_TEMPLATE:EYELASH:EYELASH_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:EYELID:EYELASH:FRONT]
+	[USE_MATERIAL_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:FINGER:NAIL:FRONT]
+	[TISSUE_LAYER:BY_CATEGORY:TOE:NAIL:FRONT]
+	[SELECT_TISSUE_LAYER:HEART:BY_CATEGORY:HEART]
+	 [PLUS_TISSUE_LAYER:SKIN:BY_CATEGORY:THROAT]
+		[TL_MAJOR_ARTERIES]
+	[BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RELSIZES]
+
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+		 [PLUS_TL_GROUP:BY_CATEGORY:HEAD:EYEBROW]
+		 [PLUS_TL_GROUP:BY_CATEGORY:EYELID:EYELASH]
+	[TL_COLOR_MODIFIER:BROWN:1]
+				[TLCM_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+			[APP_MOD_NOUN:hair:SINGULAR]
+				[APP_MOD_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+			[TISSUE_STYLE_UNIT:HAIR:STANDARD_HAIR_SHAPINGS]
+				[TSU_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
+	[TL_COLOR_MODIFIER:WHITE:1]
+				[TLCM_NOUN:skin:SINGULAR]
+			[TISSUE_LAYER_APPEARANCE_MODIFIER:WRINKLY:0:0:0:0:0:0:0]
+				[APP_MOD_RATE:1:YEARLY:0:100:30:0:NO_END]
+				[APP_MOD_NOUN:skin:SINGULAR]
+				[APP_MOD_DESC_RANGE:0:0:0:1:25:50][ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:punch:punches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:MAIN]
+	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]
+		[ATTACK_SKILL:STANCE_STRIKE]
+		[ATTACK_VERB:kick:kicks]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_BAD_MULTIATTACK]
+	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:GRASP:BY_CATEGORY:FINGER:NAIL]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:scratch:scratches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PRIORITY:SECOND]
+	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]
+		[ATTACK_SKILL:BITE]
+		[ATTACK_VERB:bite:bites]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_CANLATCH]
+	[ATTACK:PUNCH:BODYPART:BY_CATEGORY:HEAD]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:headbutt:headbutts]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_PRIORITY:SECOND]
+
+[CASTE:RICKSANTORUM]
+		[MALE]
+[CASTE_NAME:Rick Santorum:Rick Santorums:Rick Santorum]
+	[CASTE_TILE:'R'][CASTE_COLOR:4:0:1]
+[DESCRIPTION:The politician Rick Santorum has come! Beware it in general!]
+		[BODY:HUMANOID_NECK:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:HUMANOID_JOINTS:THROAT:NECK:SPINE:BRAIN:SKULL:5FINGERS:5TOES:MOUTH:TONGUE:FACIAL_FEATURES:TEETH:RIBCAGE]		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
+
+	1.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "As the hobbits are going up Mount Doom, the eye of Mordor is being drawn somewhere else. It's being drawn to Iraq. You know what? I want to keep it on Iraq. I don't want the eye to come back to the United States.":says "As the hobbits are going up Mount Doom, the eye of Mordor is being drawn somewhere else. It's being drawn to Iraq. You know what? I want to keep it on Iraq. I don't want the eye to come back to the United States.":someone say "As the hobbits are going up Mount Doom, the eye of Mordor is being drawn somewhere else. It's being drawn to Iraq. You know what? I want to keep it on Iraq. I don't want the eye to come back to the United States."]
+	
+2.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "This is not a political war at all. This is not a cultural war at all. This is a spiritual war. And the Father of Lies has his sights on what you would think the Father of Lies, Satan, would have his sights on, a good, decent, powerful, influential country, the United States of America.":says "This is not a political war at all. This is not a cultural war at all. This is a spiritual war. And the Father of Lies has his sights on what you would think the Father of Lies, Satan, would have his sights on, a good, decent, powerful, influential country, the United States of America.":someone say "This is not a political war at all. This is not a cultural war at all. This is a spiritual war. And the Father of Lies has his sights on what you would think the Father of Lies, Satan, would have his sights on, a good, decent, powerful, influential country, the United States of America."]
+
+3.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "There is a limitation on debate, which is unlike other bills, for 20 hours, but there is no limitation on amendments. In other words, Republicans if they wanted to, and I suspect they do, could offer literally thousands of amendments and keep Senate in session for weeks and months.":says "There is a limitation on debate, which is unlike other bills, for 20 hours, but there is no limitation on amendments. In other words, Republicans if they wanted to, and I suspect they do, could offer literally thousands of amendments and keep Senate in session for weeks and months.":someone say "There is a limitation on debate, which is unlike other bills, for 20 hours, but there is no limitation on amendments. In other words, Republicans if they wanted to, and I suspect they do, could offer literally thousands of amendments and keep Senate in session for weeks and months."]
+
+4.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "The reason Social Security is in big trouble is we don't have enough workers to support the retirees.":says "The reason Social Security is in big trouble is we don't have enough workers to support the retirees.":someone say "The reason Social Security is in big trouble is we don't have enough workers to support the retirees."]
+
+5.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say " I said, in other words, this $200 a month keeps you alive, she goes yes. I said, and you're complaining that you're paying $200 a month and it keeps you alive? What's your cable bill?":says " I said, in other words, this $200 a month keeps you alive, she goes yes. I said, and you're complaining that you're paying $200 a month and it keeps you alive? What's your cable bill?":someone say " I said, in other words, this $200 a month keeps you alive, she goes yes. I said, and you're complaining that you're paying $200 a month and it keeps you alive? What's your cable bill?"]
+
+
+6.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I would tell you that my first priority as a president of the United States is to repeal Barack Obama's healthcare plan.":says "I would tell you that my first priority as a president of the United States is to repeal Barack Obama's healthcare plan.":someone say "I would tell you that my first priority as a president of the United States is to repeal Barack Obama's healthcare plan."]
+
+7.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "The bottom line is that that is legitimately Israeli country. And they have a right to do within their country just like we have a right to do within our country. If they want to negotiate with Israelis, and all the people who live in the West Bank are Israelis, they're not Palestinians. There is no "Palestinian". This is Israeli land.":says "The bottom line is that that is legitimately Israeli country. And they have a right to do within their country just like we have a right to do within our country. If they want to negotiate with Israelis, and all the people who live in the West Bank are Israelis, they're not Palestinians. There is no "Palestinian". This is Israeli land.":someone say "The bottom line is that that is legitimately Israeli country. And they have a right to do within their country just like we have a right to do within our country. If they want to negotiate with Israelis, and all the people who live in the West Bank are Israelis, they're not Palestinians. There is no "Palestinian". This is Israeli land."]
+
+8.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I don't want to make black people's lives better by giving them somebody else's money; I want to give them the opportunity to go out and earn the money.":says "I don't want to make black people's lives better by giving them somebody else's money; I want to give them the opportunity to go out and earn the money.":someone say "I don't want to make black people's lives better by giving them somebody else's money; I want to give them the opportunity to go out and earn the money."]
+
+9.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "When you look and see what the left is trying to do in America today, progressives are trying to shutter faith, privatize it, push it out of the public square...":says "When you look and see what the left is trying to do in America today, progressives are trying to shutter faith, privatize it, push it out of the public square...":someone say "When you look and see what the left is trying to do in America today, progressives are trying to shutter faith, privatize it, push it out of the public square..."]
+
+10.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I don't believe in an America where the separation of church and state is absolute. The idea that the church can have no influence or no involvement in the operation of the state is absolutely antithetical to the objectives and vision of our country.":says "I don't believe in an America where the separation of church and state is absolute. The idea that the church can have no influence or no involvement in the operation of the state is absolutely antithetical to the objectives and vision of our country.":someone say "I don't believe in an America where the separation of church and state is absolute. The idea that the church can have no influence or no involvement in the operation of the state is absolutely antithetical to the objectives and vision of our country."]
+
+1.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "President Obama once said he wants everybody in America to go to college. What a snob! There are good, decent men and women who go out and work hard every day and put their skills to test that aren't taught by some liberal college professor and trying to indoctrinate them. Oh, I understand why he wants you to go to college: he wants to remake you in his image. I want to create jobs so people can remake their children into their image, not his.":says "President Obama once said he wants everybody in America to go to college. What a snob! There are good, decent men and women who go out and work hard every day and put their skills to test that aren't taught by some liberal college professor and trying to indoctrinate them. Oh, I understand why he wants you to go to college: he wants to remake you in his image. I want to create jobs so people can remake their children into their image, not his.":someone say "President Obama once said he wants everybody in America to go to college. What a snob! There are good, decent men and women who go out and work hard every day and put their skills to test that aren't taught by some liberal college professor and trying to indoctrinate them. Oh, I understand why he wants you to go to college: he wants to remake you in his image. I want to create jobs so people can remake their children into their image, not his."]
+
+2.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I don't care what the unemployment rate is going to be. It doesn't matter to me. My campaign doesn't hinge on unemployment rates and growth rates.":says "I don't care what the unemployment rate is going to be. It doesn't matter to me. My campaign doesn't hinge on unemployment rates and growth rates.":someone say "I don't care what the unemployment rate is going to be. It doesn't matter to me. My campaign doesn't hinge on unemployment rates and growth rates."]
+
+3.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "At a time when, over and over again, we were told, "Forget it, you can't win", we were winning. We were winning in a very different way, because we were touching hearts. We were raising issues that, well, frankly, a lot of people didn't want to have raised.":says "At a time when, over and over again, we were told, "Forget it, you can't win", we were winning. We were winning in a very different way, because we were touching hearts. We were raising issues that, well, frankly, a lot of people didn't want to have raised.":someone say "At a time when, over and over again, we were told, "Forget it, you can't win", we were winning. We were winning in a very different way, because we were touching hearts. We were raising issues that, well, frankly, a lot of people didn't want to have raised."]
+
+4.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "We will never have the media on our side, ever, in this country. We will never have the elite, smart people on our side, because they believe they should have the power to tell you what to do. So our colleges and universities, they're not going to be on our side.":says "We will never have the media on our side, ever, in this country. We will never have the elite, smart people on our side, because they believe they should have the power to tell you what to do. So our colleges and universities, they're not going to be on our side.":someone say "We will never have the media on our side, ever, in this country. We will never have the elite, smart people on our side, because they believe they should have the power to tell you what to do. So our colleges and universities, they're not going to be on our side."]
+
+5.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Well, as a matter of fact, I've voted to kill Big Bird in the past. So, I have a record there that I have to disclose. That doesn't mean I don't like Big Bird. I mean, you can kill things and still like them. I mean, maybe to eat them, I don't know.":says "Well, as a matter of fact, I've voted to kill Big Bird in the past. So, I have a record there that I have to disclose. That doesn't mean I don't like Big Bird. I mean, you can kill things and still like them. I mean, maybe to eat them, I don't know.":someone say "Well, as a matter of fact, I've voted to kill Big Bird in the past. So, I have a record there that I have to disclose. That doesn't mean I don't like Big Bird. I mean, you can kill things and still like them. I mean, maybe to eat them, I don't know."]
+
+6.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "The idea that the Crusades and the fight of Christendom against Islam is somehow an aggression on our part is absolutely antihistorical. And that is what the perception is by the American left who hates Christendom.":says "The idea that the Crusades and the fight of Christendom against Islam is somehow an aggression on our part is absolutely antihistorical. And that is what the perception is by the American left who hates Christendom.":someone say "The idea that the Crusades and the fight of Christendom against Islam is somehow an aggression on our part is absolutely antihistorical. And that is what the perception is by the American left who hates Christendom."]
+
+7.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "There's a variety of factors that contribute to the earth warming and cooling, and to me, this is an opportunity for the left to create — it's really a beautifully concocted scheme because they know that the earth is gonna cool and warm.":says "There's a variety of factors that contribute to the earth warming and cooling, and to me, this is an opportunity for the left to create — it's really a beautifully concocted scheme because they know that the earth is gonna cool and warm.":someone say "There's a variety of factors that contribute to the earth warming and cooling, and to me, this is an opportunity for the left to create — it's really a beautifully concocted scheme because they know that the earth is gonna cool and warm."]
+
+8.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I don't care what the unemployment rate is going to be. It doesn't matter to me. My campaign doesn't hinge on unemployment rates and growth rates.":says "I don't care what the unemployment rate is going to be. It doesn't matter to me. My campaign doesn't hinge on unemployment rates and growth rates.":someone say "I don't care what the unemployment rate is going to be. It doesn't matter to me. My campaign doesn't hinge on unemployment rates and growth rates."]
+
+9.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "At a time when, over and over again, we were told, "Forget it, you can't win", we were winning. We were winning in a very different way, because we were touching hearts. We were raising issues that, well, frankly, a lot of people didn't want to have raised.":says "At a time when, over and over again, we were told, "Forget it, you can't win", we were winning. We were winning in a very different way, because we were touching hearts. We were raising issues that, well, frankly, a lot of people didn't want to have raised.":someone say "At a time when, over and over again, we were told, "Forget it, you can't win", we were winning. We were winning in a very different way, because we were touching hearts. We were raising issues that, well, frankly, a lot of people didn't want to have raised."]
+
+10.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I mean, you break somebody, and after they're broken, they become cooperative.":says "I mean, you break somebody, and after they're broken, they become cooperative.":someone say "I mean, you break somebody, and after they're broken, they become cooperative."]
+
+
+
+
+	[BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS:SKIN:FAT:MUSCLE:BONE:CARTILAGE]
+	[BODY_DETAIL_PLAN:HEAD_HAIR_TISSUE_LAYERS]
+	[USE_TISSUE_TEMPLATE:EYEBROW:EYEBROW_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:HEAD:EYEBROW:ABOVE:BY_CATEGORY:EYE]
+	[USE_TISSUE_TEMPLATE:EYELASH:EYELASH_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:EYELID:EYELASH:FRONT]
+	[USE_MATERIAL_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:FINGER:NAIL:FRONT]
+	[TISSUE_LAYER:BY_CATEGORY:TOE:NAIL:FRONT]
+	[SELECT_TISSUE_LAYER:HEART:BY_CATEGORY:HEART]
+	 [PLUS_TISSUE_LAYER:SKIN:BY_CATEGORY:THROAT]
+		[TL_MAJOR_ARTERIES]
+	[BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RELSIZES]
+
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+		 [PLUS_TL_GROUP:BY_CATEGORY:HEAD:EYEBROW]
+		 [PLUS_TL_GROUP:BY_CATEGORY:EYELID:EYELASH]
+	[TL_COLOR_MODIFIER:BROWN:1]
+				[TLCM_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+			[APP_MOD_NOUN:hair:SINGULAR]
+				[APP_MOD_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+			[TISSUE_STYLE_UNIT:HAIR:STANDARD_HAIR_SHAPINGS]
+				[TSU_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
+	[TL_COLOR_MODIFIER:WHITE:1]
+				[TLCM_NOUN:skin:SINGULAR]
+			[TISSUE_LAYER_APPEARANCE_MODIFIER:WRINKLY:0:0:0:0:0:0:0]
+				[APP_MOD_RATE:1:YEARLY:0:100:30:0:NO_END]
+				[APP_MOD_NOUN:skin:SINGULAR]
+				[APP_MOD_DESC_RANGE:0:0:0:1:25:50][ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:punch:punches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:MAIN]
+	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]
+		[ATTACK_SKILL:STANCE_STRIKE]
+		[ATTACK_VERB:kick:kicks]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_BAD_MULTIATTACK]
+	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:GRASP:BY_CATEGORY:FINGER:NAIL]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:scratch:scratches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PRIORITY:SECOND]
+	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]
+		[ATTACK_SKILL:BITE]
+		[ATTACK_VERB:bite:bites]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_CANLATCH]
+	[ATTACK:PUNCH:BODYPART:BY_CATEGORY:HEAD]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:headbutt:headbutts]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_PRIORITY:SECOND]
+
+[CASTE:RANDPAUL]
+		[MALE]
+[CASTE_NAME:Rand Paul:Rand Pauls:Rand Paul]
+	[CASTE_TILE:'P'][CASTE_COLOR:4:0:1]
+[DESCRIPTION:The politician Rand Paul has come! Beware its father's shadow!]
+		[BODY:HUMANOID_NECK:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:HUMANOID_JOINTS:THROAT:NECK:SPINE:BRAIN:SKULL:5FINGERS:5TOES:MOUTH:TONGUE:FACIAL_FEATURES:TEETH:RIBCAGE]		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
+
+	1.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "The fundamental reason why Medicare is failing is why the Soviet Union failed, socialism doesn't work.":says "The fundamental reason why Medicare is failing is why the Soviet Union failed, socialism doesn't work.":someone say "The fundamental reason why Medicare is failing is why the Soviet Union failed, socialism doesn't work."]
+
+2.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I would've, had I've been alive at the time, I think, had the courage to march with Martin Luther King to overturn institutional racism, and I see no place in our society for institutional racism.":says "I would've, had I've been alive at the time, I think, had the courage to march with Martin Luther King to overturn institutional racism, and I see no place in our society for institutional racism.":someone say "I would've, had I've been alive at the time, I think, had the courage to march with Martin Luther King to overturn institutional racism, and I see no place in our society for institutional racism."]
+	
+3.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Some Republicans are not going to want to hear this, but I live near Fort Campbell, and there are 50,000 soldiers there. I tell people you have to truly imagine what your feelings would be if those soldiers were Chinese soldiers and they were occupying the United States. We wouldn't have it. Republican and Democrat, we'd be blowing up the Chinese with roadside bombs as they were coming off the base. No country wants foreign soldiers on their land.":says "Some Republicans are not going to want to hear this, but I live near Fort Campbell, and there are 50,000 soldiers there. I tell people you have to truly imagine what your feelings would be if those soldiers were Chinese soldiers and they were occupying the United States. We wouldn't have it. Republican and Democrat, we'd be blowing up the Chinese with roadside bombs as they were coming off the base. No country wants foreign soldiers on their land.":someone say "Some Republicans are not going to want to hear this, but I live near Fort Campbell, and there are 50,000 soldiers there. I tell people you have to truly imagine what your feelings would be if those soldiers were Chinese soldiers and they were occupying the United States. We wouldn't have it. Republican and Democrat, we'd be blowing up the Chinese with roadside bombs as they were coming off the base. No country wants foreign soldiers on their land."]
+
+4.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "We have people coming in by the millions...Am I absolutely opposed to immigration? No...We have to find a way to believe in the rule of law, believe in border control and at the same time, not villify the issue.":says "We have people coming in by the millions...Am I absolutely opposed to immigration? No...We have to find a way to believe in the rule of law, believe in border control and at the same time, not villify the issue.":someone say "We have people coming in by the millions...Am I absolutely opposed to immigration? No...We have to find a way to believe in the rule of law, believe in border control and at the same time, not villify the issue."]
+
+5.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "If you think you have the right to health care, you are saying basically that I am your slave. I provide health care. ...My staff and technicians provide it. ...If you have a right to health care, then you have a right to their labor.":says "If you think you have the right to health care, you are saying basically that I am your slave. I provide health care. ...My staff and technicians provide it. ...If you have a right to health care, then you have a right to their labor.":someone say "If you think you have the right to health care, you are saying basically that I am your slave. I provide health care. ...My staff and technicians provide it. ...If you have a right to health care, then you have a right to their labor."]
+
+6.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I think term limits are a good idea.":says "I think term limits are a good idea.":someone say "I think term limits are a good idea."]
+
+7.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I think this sets a very bad precedent, the president unilaterally on his own starting war without any consent from Congress.":says "I think this sets a very bad precedent, the president unilaterally on his own starting war without any consent from Congress.":someone say "I think this sets a very bad precedent, the president unilaterally on his own starting war without any consent from Congress."]
+
+8.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Technology revolutionaries succeed because of the decentralized nature of the Internet, which defies government control.":says "Technology revolutionaries succeed because of the decentralized nature of the Internet, which defies government control.":someone say "Technology revolutionaries succeed because of the decentralized nature of the Internet, which defies government control."]
+
+9.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Foreign aid goes from poor people in rich countries to rich people in poor countries.":says "Foreign aid goes from poor people in rich countries to rich people in poor countries.":someone say "Foreign aid goes from poor people in rich countries to rich people in poor countries."]
+
+10.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "
+As a doctor I will make it my mission to heal the nation, reverse the course of Obamacare and repeal every last bit of it.":says "
+As a doctor I will make it my mission to heal the nation, reverse the course of Obamacare and repeal every last bit of it.":someone say "
+As a doctor I will make it my mission to heal the nation, reverse the course of Obamacare and repeal every last bit of it."]
+
+
+1.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "To defend our country we need to gather intelligence on the enemy but when the intelligence lies to Congress how are we to trust them?":says "To defend our country we need to gather intelligence on the enemy but when the intelligence lies to Congress how are we to trust them?":someone say "To defend our country we need to gather intelligence on the enemy but when the intelligence lies to Congress how are we to trust them?"]
+
+2.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "There comes to a time in the history of nations when fear and complacency allow power to accumulate and liberty and privacy to suffer.":says "There comes to a time in the history of nations when fear and complacency allow power to accumulate and liberty and privacy to suffer.":someone say "There comes to a time in the history of nations when fear and complacency allow power to accumulate and liberty and privacy to suffer."]
+
+3.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I don't trust President Obama with our records.":says "I don't trust President Obama with our records.":someone say "I don't trust President Obama with our records."]
+
+4.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Sometimes both sides of the civil war are evil, and sometimes intervention sometimes makes us less safe.":says "Sometimes both sides of the civil war are evil, and sometimes intervention sometimes makes us less safe.":someone say "Sometimes both sides of the civil war are evil, and sometimes intervention sometimes makes us less safe."]
+
+5.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "If you want boots on the ground, and you want them to be our sons and daughters, you got 14 other choices. There will always be a Bush or Clinton for you, if you want to go back to war in Iraq. But the thing is, the first war was a mistake. And I'm not sending our sons and our daughters back to Iraq.":says "If you want boots on the ground, and you want them to be our sons and daughters, you got 14 other choices. There will always be a Bush or Clinton for you, if you want to go back to war in Iraq. But the thing is, the first war was a mistake. And I'm not sending our sons and our daughters back to Iraq.":someone say "If you want boots on the ground, and you want them to be our sons and daughters, you got 14 other choices. There will always be a Bush or Clinton for you, if you want to go back to war in Iraq. But the thing is, the first war was a mistake. And I'm not sending our sons and our daughters back to Iraq."]
+
+6.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "If I were president, I would try to be one who says, you know what, I'm a Reagan Conservative.":says "If I were president, I would try to be one who says, you know what, I'm a Reagan Conservative.":someone say "If I were president, I would try to be one who says, you know what, I'm a Reagan Conservative."]
+
+7.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "A free society will abide unofficial, private discrimination, even when that means allowing hate-filled groups to exclude people based on the color of their skin.":says "A free society will abide unofficial, private discrimination, even when that means allowing hate-filled groups to exclude people based on the color of their skin.":someone say "A free society will abide unofficial, private discrimination, even when that means allowing hate-filled groups to exclude people based on the color of their skin."]
+
+8.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I think it's part of this sort of blame game society in the sense that it's always got to be someone's fault instead of the fact that sometimes accidents happen":says "I think it's part of this sort of blame game society in the sense that it's always got to be someone's fault instead of the fact that sometimes accidents happen":someone say "I think it's part of this sort of blame game society in the sense that it's always got to be someone's fault instead of the fact that sometimes accidents happen"]
+
+9.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I told my constituents when I ran for office that the most important vote I would ever take would be on sending their men and women, the boys and girls, the young men and women in my state, or anywhere else in the United States, to war.":says "I told my constituents when I ran for office that the most important vote I would ever take would be on sending their men and women, the boys and girls, the young men and women in my state, or anywhere else in the United States, to war.":someone say "I told my constituents when I ran for office that the most important vote I would ever take would be on sending their men and women, the boys and girls, the young men and women in my state, or anywhere else in the United States, to war."]
+
+
+10.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "The militarization of our law enforcement is due to an unprecedented expansion of government power in this realm. ":says "The militarization of our law enforcement is due to an unprecedented expansion of government power in this realm. ":someone say "The militarization of our law enforcement is due to an unprecedented expansion of government power in this realm."]
+
+	[BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS:SKIN:FAT:MUSCLE:BONE:CARTILAGE]
+	[BODY_DETAIL_PLAN:HEAD_HAIR_TISSUE_LAYERS]
+	[USE_TISSUE_TEMPLATE:EYEBROW:EYEBROW_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:HEAD:EYEBROW:ABOVE:BY_CATEGORY:EYE]
+	[USE_TISSUE_TEMPLATE:EYELASH:EYELASH_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:EYELID:EYELASH:FRONT]
+	[USE_MATERIAL_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:FINGER:NAIL:FRONT]
+	[TISSUE_LAYER:BY_CATEGORY:TOE:NAIL:FRONT]
+	[SELECT_TISSUE_LAYER:HEART:BY_CATEGORY:HEART]
+	 [PLUS_TISSUE_LAYER:SKIN:BY_CATEGORY:THROAT]
+		[TL_MAJOR_ARTERIES]
+	[BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RELSIZES]
+
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+		 [PLUS_TL_GROUP:BY_CATEGORY:HEAD:EYEBROW]
+		 [PLUS_TL_GROUP:BY_CATEGORY:EYELID:EYELASH]
+	[TL_COLOR_MODIFIER:BROWN:1]
+				[TLCM_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+			[APP_MOD_NOUN:hair:SINGULAR]
+				[APP_MOD_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+			[TISSUE_STYLE_UNIT:HAIR:STANDARD_HAIR_SHAPINGS]
+				[TSU_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
+	[TL_COLOR_MODIFIER:WHITE:1]
+				[TLCM_NOUN:skin:SINGULAR]
+			[TISSUE_LAYER_APPEARANCE_MODIFIER:WRINKLY:0:0:0:0:0:0:0]
+				[APP_MOD_RATE:1:YEARLY:0:100:30:0:NO_END]
+				[APP_MOD_NOUN:skin:SINGULAR]
+				[APP_MOD_DESC_RANGE:0:0:0:1:25:50][ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:punch:punches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:MAIN]
+	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]
+		[ATTACK_SKILL:STANCE_STRIKE]
+		[ATTACK_VERB:kick:kicks]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_BAD_MULTIATTACK]
+	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:GRASP:BY_CATEGORY:FINGER:NAIL]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:scratch:scratches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PRIORITY:SECOND]
+	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]
+		[ATTACK_SKILL:BITE]
+		[ATTACK_VERB:bite:bites]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_CANLATCH]
+	[ATTACK:PUNCH:BODYPART:BY_CATEGORY:HEAD]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:headbutt:headbutts]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_PRIORITY:SECOND]
+
+
+[CASTE:MIKEHUCKABEE]
+		[MALE]
+[CASTE_NAME:Mike Huckabee:Mike Huckabees:Mike Huckabee]
+	[CASTE_TILE:'H'][CASTE_COLOR:4:0:1]
+[DESCRIPTION:The politician Mike Huckabee has come! Beware its talk shows!]
+		[BODY:HUMANOID_NECK:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:HUMANOID_JOINTS:THROAT:NECK:SPINE:BRAIN:SKULL:5FINGERS:5TOES:MOUTH:TONGUE:FACIAL_FEATURES:TEETH:RIBCAGE]		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
+
+		1.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I didn't get into politics because I thought government had a better answer.":says "I didn't get into politics because I thought government had a better answer.":someone say "I didn't get into politics because I thought government had a better answer."]
+
+	2.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "And they would ask, well, now, are you one of those narrow-minded Baptists who think only Baptists are going to heaven? To which I enjoy replying, now actually I'm more narrow than that, I don't think all the Baptists are going to make it.":says "And they would ask, well, now, are you one of those narrow-minded Baptists who think only Baptists are going to heaven? To which I enjoy replying, now actually I'm more narrow than that, I don't think all the Baptists are going to make it.":someone say "And they would ask, well, now, are you one of those narrow-minded Baptists who think only Baptists are going to heaven? To which I enjoy replying, now actually I'm more narrow than that, I don't think all the Baptists are going to make it."]
+
+	3.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Watching ducks land on a lake in Arkansas in the winter is about the closest to Heaven as you can find on this earth… and as someone who believes, according to my faith, I will go to Heaven when I die, I am pretty sure that there is duck hunting in Heaven!":says "Watching ducks land on a lake in Arkansas in the winter is about the closest to Heaven as you can find on this earth… and as someone who believes, according to my faith, I will go to Heaven when I die, I am pretty sure that there is duck hunting in Heaven!":someone say "Watching ducks land on a lake in Arkansas in the winter is about the closest to Heaven as you can find on this earth… and as someone who believes, according to my faith, I will go to Heaven when I die, I am pretty sure that there is duck hunting in Heaven!"]
+
+4.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "My plan to secure the border? Two words. Chuck Norris.":says "My plan to secure the border? Two words. Chuck Norris.":someone say "My plan to secure the border? Two words. Chuck Norris."]
+
+	
+5.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I may not be the expert as some people on foreign policy, but I did stay at a Holiday Inn Express last night.":says "I may not be the expert as some people on foreign policy, but I did stay at a Holiday Inn Express last night.":someone say "I may not be the expert as some people on foreign policy, but I did stay at a Holiday Inn Express last night."]
+
+6.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Whoever in our government leaked that information is guilty of treason, and I think anything less than execution is too kind a penalty.":says "Whoever in our government leaked that information is guilty of treason, and I think anything less than execution is too kind a penalty.":someone say "Whoever in our government leaked that information is guilty of treason, and I think anything less than execution is too kind a penalty."]
+
+7.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I would love to know more. What I know is troubling enough. And one thing that I do know is his having grown up in Kenya, his view of the Brits, for example, very different than the average American.":says "I would love to know more. What I know is troubling enough. And one thing that I do know is his having grown up in Kenya, his view of the Brits, for example, very different than the average American.":someone say "I would love to know more. What I know is troubling enough. And one thing that I do know is his having grown up in Kenya, his view of the Brits, for example, very different than the average American."]
+
+8.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Here was a kid who was 16 years old, he committed a burglary, he was aggravated, but not armed. And for that he got 108 years, one hundred and eight years.":says "Here was a kid who was 16 years old, he committed a burglary, he was aggravated, but not armed. And for that he got 108 years, one hundred and eight years.":someone say "Here was a kid who was 16 years old, he committed a burglary, he was aggravated, but not armed. And for that he got 108 years, one hundred and eight years."]
+
+
+9.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I almost wish that there would be, like, a simultaneous telecast, and all Americans would be forced, forced at gunpoint no less, to listen to every David Barton message, and I think our country would be better for it. I wish it'd happen.":says "I almost wish that there would be, like, a simultaneous telecast, and all Americans would be forced, forced at gunpoint no less, to listen to every David Barton message, and I think our country would be better for it. I wish it'd happen.":someone say "I almost wish that there would be, like, a simultaneous telecast, and all Americans would be forced, forced at gunpoint no less, to listen to every David Barton message, and I think our country would be better for it. I wish it'd happen."]
+
+10.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Maybe Obama would take ISIS seriously if he discovered they didn't recycle.":says "Maybe Obama would take ISIS seriously if he discovered they didn't recycle.":someone say "Maybe Obama would take ISIS seriously if he discovered they didn't recycle."]
+
+11.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "We have 6,000 kids every day drop out in this country. And they don't drop out because they're dumb. They drop out because they're bored to death.":says "We have 6,000 kids every day drop out in this country. And they don't drop out because they're dumb. They drop out because they're bored to death.":someone say "We have 6,000 kids every day drop out in this country. And they don't drop out because they're dumb. They drop out because they're bored to death."]
+
+12.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "This president's foreign policy is the most feckless in American history. It is so naive that he would trust the Iranians. By doing so, he will take the Israelis and march them to the door of the oven.":says "This president's foreign policy is the most feckless in American history. It is so naive that he would trust the Iranians. By doing so, he will take the Israelis and march them to the door of the oven.":someone say "This president's foreign policy is the most feckless in American history. It is so naive that he would trust the Iranians. By doing so, he will take the Israelis and march them to the door of the oven."]
+
+13.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Women I know are smart, educated, intelligent, capable of doing anything that anyone else can do.":says "Women I know are smart, educated, intelligent, capable of doing anything that anyone else can do.":someone say "Women I know are smart, educated, intelligent, capable of doing anything that anyone else can do."]
+
+14.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "So the stimulus didn't just waste your money; it planted the seeds from which the poisonous tree of death panels will grow.":says "So the stimulus didn't just waste your money; it planted the seeds from which the poisonous tree of death panels will grow.":someone say "So the stimulus didn't just waste your money; it planted the seeds from which the poisonous tree of death panels will grow."]
+
+15.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Who will get rationed? Well, the very old and the very young, obviously, the most helpless and vulnerable among us. But it will also be those who don't live politically correct lives, those who have too many cigarettes or cocktails or cans of soda. "Death by Chocolate" won't just be a cute name on the dessert menu.":says "Who will get rationed? Well, the very old and the very young, obviously, the most helpless and vulnerable among us. But it will also be those who don't live politically correct lives, those who have too many cigarettes or cocktails or cans of soda. "Death by Chocolate" won't just be a cute name on the dessert menu.":someone say "Who will get rationed? Well, the very old and the very young, obviously, the most helpless and vulnerable among us. But it will also be those who don't live politically correct lives, those who have too many cigarettes or cocktails or cans of soda. "Death by Chocolate" won't just be a cute name on the dessert menu."]
+
+16.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Hi, I'm Mike Huckabee of Arkansas, wanting to say "Congratulations, Canada, on preserving your national igloo".":says "Hi, I'm Mike Huckabee of Arkansas, wanting to say "Congratulations, Canada, on preserving your national igloo".":someone say "Hi, I'm Mike Huckabee of Arkansas, wanting to say "Congratulations, Canada, on preserving your national igloo"."]
+
+17.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "It's a theocratic war. And I don't know if anybody fully understands that. I'm the only guy on that stage with a theology degree. I think I understand it really well.":says "It's a theocratic war. And I don't know if anybody fully understands that. I'm the only guy on that stage with a theology degree. I think I understand it really well.":someone say "It's a theocratic war. And I don't know if anybody fully understands that. I'm the only guy on that stage with a theology degree. I think I understand it really well."]
+
+18.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I think there were a lot of Christian people who simply stayed home for reasons that I can't figure out.":says "I think there were a lot of Christian people who simply stayed home for reasons that I can't figure out.":someone say "I think there were a lot of Christian people who simply stayed home for reasons that I can't figure out."]
+
+19.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I'm a passionate, ardent supporter of having music and art in every school for every student at every grade level.":says "I'm a passionate, ardent supporter of having music and art in every school for every student at every grade level.":someone say "I'm a passionate, ardent supporter of having music and art in every school for every student at every grade level."]
+
+20.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "It's the best proposal that we ought to have because it's flatter, it's fairer, it's finite, it's family friendly.":says "It's the best proposal that we ought to have because it's flatter, it's fairer, it's finite, it's family friendly.":someone say "It's the best proposal that we ought to have because it's flatter, it's fairer, it's finite, it's family friendly."]
+
+	[BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS:SKIN:FAT:MUSCLE:BONE:CARTILAGE]
+	[BODY_DETAIL_PLAN:HEAD_HAIR_TISSUE_LAYERS]
+	[USE_TISSUE_TEMPLATE:EYEBROW:EYEBROW_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:HEAD:EYEBROW:ABOVE:BY_CATEGORY:EYE]
+	[USE_TISSUE_TEMPLATE:EYELASH:EYELASH_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:EYELID:EYELASH:FRONT]
+	[USE_MATERIAL_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:FINGER:NAIL:FRONT]
+	[TISSUE_LAYER:BY_CATEGORY:TOE:NAIL:FRONT]
+	[SELECT_TISSUE_LAYER:HEART:BY_CATEGORY:HEART]
+	 [PLUS_TISSUE_LAYER:SKIN:BY_CATEGORY:THROAT]
+		[TL_MAJOR_ARTERIES]
+	[BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RELSIZES]
+
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+		 [PLUS_TL_GROUP:BY_CATEGORY:HEAD:EYEBROW]
+		 [PLUS_TL_GROUP:BY_CATEGORY:EYELID:EYELASH]
+	[TL_COLOR_MODIFIER:BROWN:1]
+				[TLCM_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+			[APP_MOD_NOUN:hair:SINGULAR]
+				[APP_MOD_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+			[TISSUE_STYLE_UNIT:HAIR:STANDARD_HAIR_SHAPINGS]
+				[TSU_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
+	[TL_COLOR_MODIFIER:WHITE:1]
+				[TLCM_NOUN:skin:SINGULAR]
+			[TISSUE_LAYER_APPEARANCE_MODIFIER:WRINKLY:0:0:0:0:0:0:0]
+				[APP_MOD_RATE:1:YEARLY:0:100:30:0:NO_END]
+				[APP_MOD_NOUN:skin:SINGULAR]
+				[APP_MOD_DESC_RANGE:0:0:0:1:25:50][ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:punch:punches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:MAIN]
+	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]
+		[ATTACK_SKILL:STANCE_STRIKE]
+		[ATTACK_VERB:kick:kicks]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_BAD_MULTIATTACK]
+	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:GRASP:BY_CATEGORY:FINGER:NAIL]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:scratch:scratches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PRIORITY:SECOND]
+	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]
+		[ATTACK_SKILL:BITE]
+		[ATTACK_VERB:bite:bites]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_CANLATCH]
+	[ATTACK:PUNCH:BODYPART:BY_CATEGORY:HEAD]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:headbutt:headbutts]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_PRIORITY:SECOND]
+
+[CASTE:MARCORUBIO]
+[CASTE_NAME:Marco Rubio:Marco Rubios:Rubio]
+	[CASTE_TILE:'M'][CASTE_COLOR:4:0:1]
+[DESCRIPTION:The politician Marco Rubio has come! Beware its mechanical manner!]
+		[CASTE_GLOWTILE:'"'][CASTE_GLOWCOLOR:4:0:1]	[BODY:HUMANOID_NECK:2EYES:2EARS:NOSE:POWERCORE:HUMANOID_JOINTS:NECK:SPINE:CPU:SKULL:5FINGERS:5TOES:MOUTH:TONGUE:FACIAL_FEATURES:TEETH]	
+	  [NO_EAT]
+        [NO_DRINK]
+        [NO_SLEEP]
+        [NO_FEVERS]
+        [AMPHIBIOUS]
+        [NONAUSEA]
+        [NOSMELLYROT]
+
+	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Let's dispel this fiction that Obama doesn't know what he's doing, he knows exactly what he's doing!":says "Let's dispel this fiction that Obama doesn't know what he's doing, he knows exactly what he's doing!":someone say "Let's dispel this fiction that Obama doesn't know what he's doing, he knows exactly what he's doing!"]
+	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Let's dispel this fiction that Obama doesn't know what he's doing, he knows exactly what he's doing!":says "Let's dispel this fiction that Obama doesn't know what he's doing, he knows exactly what he's doing!":someone say "Let's dispel this fiction that Obama doesn't know what he's doing, he knows exactly what he's doing!"]
+	[BODY_DETAIL_PLAN:GEAR_TISSUE_LAYERS:SKIN:FAT:MUSCLE:BONE:CARTILAGE:GEAR]	[BODY_DETAIL_PLAN:HEAD_HAIR_TISSUE_LAYERS]
+	[USE_TISSUE_TEMPLATE:EYEBROW:EYEBROW_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:HEAD:EYEBROW:ABOVE:BY_CATEGORY:EYE]
+	[USE_TISSUE_TEMPLATE:EYELASH:EYELASH_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:EYELID:EYELASH:FRONT]
+	[USE_MATERIAL_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:FINGER:NAIL:FRONT]
+	[TISSUE_LAYER:BY_CATEGORY:TOE:NAIL:FRONT]
+	[SELECT_TISSUE_LAYER:HEART:BY_CATEGORY:HEART]
+	 [PLUS_TISSUE_LAYER:SKIN:BY_CATEGORY:THROAT]
+		[TL_MAJOR_ARTERIES]
+	[BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RELSIZES]
+
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+		 [PLUS_TL_GROUP:BY_CATEGORY:HEAD:EYEBROW]
+		 [PLUS_TL_GROUP:BY_CATEGORY:EYELID:EYELASH]
+	[TL_COLOR_MODIFIER:BROWN:1]
+				[TLCM_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+			[APP_MOD_NOUN:hair:SINGULAR]
+				[APP_MOD_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:HEAD:HAIR]
+			[TISSUE_STYLE_UNIT:HAIR:STANDARD_HAIR_SHAPINGS]
+				[TSU_NOUN:hair:SINGULAR]
+		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
+	[TL_COLOR_MODIFIER:WHITE:1]
+				[TLCM_NOUN:skin:SINGULAR]
+			[TISSUE_LAYER_APPEARANCE_MODIFIER:WRINKLY:0:0:0:0:0:0:0]
+				[APP_MOD_RATE:1:YEARLY:0:100:30:0:NO_END]
+				[APP_MOD_NOUN:skin:SINGULAR]
+				[APP_MOD_DESC_RANGE:0:0:0:1:25:50][ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:punch:punches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:MAIN]
+	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]
+		[ATTACK_SKILL:STANCE_STRIKE]
+		[ATTACK_VERB:kick:kicks]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_BAD_MULTIATTACK]
+	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:GRASP:BY_CATEGORY:FINGER:NAIL]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:scratch:scratches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PRIORITY:SECOND]
+	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]
+		[ATTACK_SKILL:BITE]
+		[ATTACK_VERB:bite:bites]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_CANLATCH]
+	[ATTACK:PUNCH:BODYPART:BY_CATEGORY:HEAD]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:headbutt:headbutts]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_PRIORITY:SECOND]
+
+
+
+-------------------END CASTES HERE-------------------------
+	[SELECT_CASTE:ALL]
