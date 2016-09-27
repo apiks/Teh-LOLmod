@@ -1,1 +1,1 @@
-v1.57 - Added new language words & some book titles.
+v1.57 - Added new language words & some book titles

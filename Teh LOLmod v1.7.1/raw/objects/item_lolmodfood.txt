@@ -1,0 +1,13 @@
+item_lolmoodfood
+
+[ITEM_FOOD:ITEM_FOOD_CHIPS]
+[NAME:chips]
+[LEVEL:2]
+
+[ITEM_FOOD:ITEM_FOOD_COFFEE]
+[NAME:coffee]
+[LEVEL:3]
+
+[ITEM_FOOD:ITEM_FOOD_DINNER]
+[NAME:tv dinner]
+[LEVEL:4]
