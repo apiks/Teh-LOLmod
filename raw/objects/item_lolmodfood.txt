@@ -1,5 +1,8 @@
 item_lolmoodfood
 
+[OBJECT:ITEM]
+
+
 [ITEM_FOOD:ITEM_FOOD_CHIPS]
 [NAME:chips]
 [LEVEL:2]

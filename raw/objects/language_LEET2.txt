@@ -2169,7 +2169,6 @@ leet,leetspeak,pedo,bear,pedobear,roxxoz,skillz,haxor,haxxorz,noob,lolol,pwnzorz
 	[T_WORD:YEARLING:juxxood]
 	[T_WORD:YELL:hoxad]
 	[T_WORD:YELLOW:pwnorz]
-	[T_WORD:YOR:losak]
 	[T_WORD:YOUNG:wooro]
 	[T_WORD:YOUTH:dade]
 	[T_WORD:ZEAL:hood]

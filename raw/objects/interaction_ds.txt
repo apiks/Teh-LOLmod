@@ -21,7 +21,7 @@ interaction_ds
 		[IE_ARENA_NAME:Piracy]
 		[SYNDROME]
 			[CE_DISPLAY_NAME:NAME:pirate:pirates:pirate:START:0]
-			[CAN_DO_INTERACTION:START:0]
+			[CE_CAN_DO_INTERACTION:START:0]
 				[CDI:ADV_NAME:talk like a pirate]
 				[CDI:INTERACTION:YARR_DS]
 				[CDI:TARGET:A:SELF_ONLY]

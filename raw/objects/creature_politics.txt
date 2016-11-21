@@ -2194,7 +2194,116 @@ As a doctor I will make it my mission to heal the nation, reverse the course of 
 		[ATTACK_PREPARE_AND_RECOVER:4:4]
 		[ATTACK_PRIORITY:SECOND]
 
+[CASTE:EGGMCMUFFIN]
+		[MALE]
+[CASTE_NAME:Evan Mcmullin:Evan Mcmullins:Mcmullin]
+	[CASTE_TILE:'E'][CASTE_COLOR:4:0:1]
+[DESCRIPTION:The politician Evan Mcmullin has come! Beware its surpise attacks!]
+		[BODY:HUMANOID_NECK:2EYES:2EARS:NOSE:2LUNGS:HEART:GUTS:ORGANS:HUMANOID_JOINTS:THROAT:NECK:SPINE:BRAIN:SKULL:5FINGERS:5TOES:MOUTH:TONGUE:FACIAL_FEATURES:TEETH:RIBCAGE]		[SET_BP_GROUP:BY_TYPE:LOWERBODY][BP_ADD_TYPE:GELDABLE]
 
+
+1.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "It’s never too late to do the right thing.":says "It’s never too late to do the right thing.":someone say "It’s never too late to do the right thing."]
+
+   2.	[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "The time has come for a new generation of American leadership and civic engagement.":says "The time has come for a new generation of American leadership and civic engagement.":someone say "The time has come for a new generation of American leadership and civic engagement."]
+
+3.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Let's get one thing straight right away. I'd fight the horse sized duck because it would be really slow and I'd be able to circle it and attack its legs from side or the rear.":says "Let's get one thing straight right away. I'd fight the horse sized duck because it would be really slow and I'd be able to circle it and attack its legs from side or the rear.":someone say "Let's get one thing straight right away. I'd fight the horse sized duck because it would be really slow and I'd be able to circle it and attack its legs from side or the rear."]
+
+4.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Obamacare has been steadily driving up prices and reducing options for families across the country.":says "Obamacare has been steadily driving up prices and reducing options for families across the country.":someone say "Obamacare has been steadily driving up prices and reducing options for families across the country."]
+
+5.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I'm the only presidential candidate who still has student loans, so I definitely understand this issue.":says "I'm the only presidential candidate who still has student loans, so I definitely understand this issue.":someone say "I'm the only presidential candidate who still has student loans, so I definitely understand this issue."]
+
+6.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "The trouble with the minimum wage is that while it helps the employees who keep their jobs, it hurts those who lose their jobs or are never hired because an employer cut back hiring.":says "The trouble with the minimum wage is that while it helps the employees who keep their jobs, it hurts those who lose their jobs or are never hired because an employer cut back hiring.":someone say "The trouble with the minimum wage is that while it helps the employees who keep their jobs, it hurts those who lose their jobs or are never hired because an employer cut back hiring."]
+
+7.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "We need anti-poverty measures that help lift people out of poverty and help them take care of their children.":says "We need anti-poverty measures that help lift people out of poverty and help them take care of their children.":someone say "We need anti-poverty measures that help lift people out of poverty and help them take care of their children."]
+
+8.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "A pardon for Edward Snowden is completely unjustified.":says "A pardon for Edward Snowden is completely unjustified.":someone say "A pardon for Edward Snowden is completely unjustified."]
+
+9.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "The down side of picking up momentum in a presidential race is that scheduling can be tight.":says "The down side of picking up momentum in a presidential race is that scheduling can be tight.":someone say "The down side of picking up momentum in a presidential race is that scheduling can be tight."]
+
+10.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "A core responsibility of the federal government should be enforce the civil rights detailed in the Constitution. That's not the type of thing we can leave to the states.":says "A core responsibility of the federal government should be enforce the civil rights detailed in the Constitution. That's not the type of thing we can leave to the states.":someone say "A core responsibility of the federal government should be enforce the civil rights detailed in the Constitution. That's not the type of thing we can leave to the states."]
+
+11.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I would appoint Supreme Court Justices who are originalists, like Justice Scalia.":says "I would appoint Supreme Court Justices who are originalists, like Justice Scalia.":someone say "I would appoint Supreme Court Justices who are originalists, like Justice Scalia."]
+
+12.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "I support state rights. So if a state wants to legalize marijuana, it should have the right to do that. For the record, I don't think that's a particularly wise course of action and if my state were ever voting on that, I would vote against legalization.":says "I support state rights. So if a state wants to legalize marijuana, it should have the right to do that. For the record, I don't think that's a particularly wise course of action and if my state were ever voting on that, I would vote against legalization.":someone say "I support state rights. So if a state wants to legalize marijuana, it should have the right to do that. For the record, I don't think that's a particularly wise course of action and if my state were ever voting on that, I would vote against legalization."]
+
+13.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "National security issues and humanitarian issues are part of the same picture in my mind, and that’s what one of my primary take ways was from having worked in the humanitarian space and in the national security space.":says "National security issues and humanitarian issues are part of the same picture in my mind, and that’s what one of my primary take ways was from having worked in the humanitarian space and in the national security space.":someone say "National security issues and humanitarian issues are part of the same picture in my mind, and that’s what one of my primary take ways was from having worked in the humanitarian space and in the national security space."]
+
+14.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "In a year where Americans have lost faith in the candidates of both major parties, it’s time for a generation of new leadership to step up.":says "In a year where Americans have lost faith in the candidates of both major parties, it’s time for a generation of new leadership to step up.":someone say "In a year where Americans have lost faith in the candidates of both major parties, it’s time for a generation of new leadership to step up."]
+
+15.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "We need a simplified tax code.":says "We need a simplified tax code.":someone say "We need a simplified tax code."]
+
+16.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "We need a change agent that understands what makes this country special and that isn’t about dividing people.":says "We need a change agent that understands what makes this country special and that isn’t about dividing people.":someone say "We need a change agent that understands what makes this country special and that isn’t about dividing people."]
+
+17.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Just as the American Revolution required men and women devoted to liberty and freedom to stand up and be counted, this moment calls a new generation to the same sacred task.":says "Just as the American Revolution required men and women devoted to liberty and freedom to stand up and be counted, this moment calls a new generation to the same sacred task.":someone say "Just as the American Revolution required men and women devoted to liberty and freedom to stand up and be counted, this moment calls a new generation to the same sacred task."]
+
+18.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Many of our leaders have vilified Syrian refugees in a way that I think is really unnecessary, unproductive and just misguided all around.":says "Many of our leaders have vilified Syrian refugees in a way that I think is really unnecessary, unproductive and just misguided all around.":someone say "Many of our leaders have vilified Syrian refugees in a way that I think is really unnecessary, unproductive and just misguided all around."]
+
+19.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "Like many Americans, I hoped that someone would step forward months and months ago. I felt recently that this was the last moment and understanding that no one else was preparing to do this, I felt that it had to happen.":says "Like many Americans, I hoped that someone would step forward months and months ago. I felt recently that this was the last moment and understanding that no one else was preparing to do this, I felt that it had to happen.":someone say "Like many Americans, I hoped that someone would step forward months and months ago. I felt recently that this was the last moment and understanding that no one else was preparing to do this, I felt that it had to happen."]
+
+20.[SOUND:PEACEFUL_INTERMITTENT:100:10000:VOCALIZATION:say "More power needs to be shifted back to the states because power at the state level is far more accountable.":says "More power needs to be shifted back to the states because power at the state level is far more accountable.":someone say "More power needs to be shifted back to the states because power at the state level is far more accountable."]
+
+	[BODY_DETAIL_PLAN:VERTEBRATE_TISSUE_LAYERS:SKIN:FAT:MUSCLE:BONE:CARTILAGE]
+	[USE_TISSUE_TEMPLATE:EYEBROW:EYEBROW_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:HEAD:EYEBROW:ABOVE:BY_CATEGORY:EYE]
+	[USE_TISSUE_TEMPLATE:EYELASH:EYELASH_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:EYELID:EYELASH:FRONT]
+	[USE_MATERIAL_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[USE_TISSUE_TEMPLATE:NAIL:NAIL_TEMPLATE]
+	[TISSUE_LAYER:BY_CATEGORY:FINGER:NAIL:FRONT]
+	[TISSUE_LAYER:BY_CATEGORY:TOE:NAIL:FRONT]
+	[SELECT_TISSUE_LAYER:HEART:BY_CATEGORY:HEART]
+	 [PLUS_TISSUE_LAYER:SKIN:BY_CATEGORY:THROAT]
+		[TL_MAJOR_ARTERIES]
+	[BODY_DETAIL_PLAN:STANDARD_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_HEAD_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RIBCAGE_POSITIONS]
+	[BODY_DETAIL_PLAN:HUMANOID_RELSIZES]
+
+
+		[SET_TL_GROUP:BY_CATEGORY:ALL:SKIN]
+	[TL_COLOR_MODIFIER:WHITE:1]
+				[TLCM_NOUN:skin:SINGULAR]
+			[TISSUE_LAYER_APPEARANCE_MODIFIER:WRINKLY:0:0:0:0:0:0:0]
+				[APP_MOD_RATE:1:YEARLY:0:100:30:0:NO_END]
+				[APP_MOD_NOUN:skin:SINGULAR]
+				[APP_MOD_DESC_RANGE:0:0:0:1:25:50][ATTACK:PUNCH:BODYPART:BY_TYPE:GRASP]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:punch:punches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:MAIN]
+	[ATTACK:KICK:BODYPART:BY_TYPE:STANCE]
+		[ATTACK_SKILL:STANCE_STRIKE]
+		[ATTACK_VERB:kick:kicks]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_FLAG_WITH]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_BAD_MULTIATTACK]
+	[ATTACK:SCRATCH:CHILD_TISSUE_LAYER_GROUP:BY_TYPE:GRASP:BY_CATEGORY:FINGER:NAIL]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:scratch:scratches]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PRIORITY:SECOND]
+	[ATTACK:BITE:CHILD_BODYPART_GROUP:BY_CATEGORY:HEAD:BY_CATEGORY:TOOTH]
+		[ATTACK_SKILL:BITE]
+		[ATTACK_VERB:bite:bites]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PENETRATION_PERC:100]
+		[ATTACK_FLAG_EDGE]
+		[ATTACK_PREPARE_AND_RECOVER:3:3]
+		[ATTACK_PRIORITY:SECOND]
+		[ATTACK_FLAG_CANLATCH]
+	[ATTACK:PUNCH:BODYPART:BY_CATEGORY:HEAD]
+		[ATTACK_SKILL:GRASP_STRIKE]
+		[ATTACK_VERB:headbutt:headbutts]
+		[ATTACK_CONTACT_PERC:100]
+		[ATTACK_PREPARE_AND_RECOVER:4:4]
+		[ATTACK_PRIORITY:SECOND]
 
 -------------------END CASTES HERE-------------------------
 	[SELECT_CASTE:ALL]

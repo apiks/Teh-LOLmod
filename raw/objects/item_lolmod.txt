@@ -1,3 +1,7 @@
+item_lolmod
+
+[OBJECT:ITEM]
+
 [ITEM_TOOL:ITEM_TOOL_ELECTRONIC_COMP]
 [NAME:electronic component:electronic components]
 [VALUE:30]
