@@ -1,0 +1,10 @@
+item_shieldpolitics
+
+[OBJECT:ITEM]
+
+[ITEM_SHIELD:ITEM_SHIELD_BRIEFCASE]
+[NAME:briefcase:briefcases]
+[ARMORLEVEL:2]
+[BLOCKCHANCE:20]
+[UPSTEP:2]
+[MATERIAL_SIZE:4]
