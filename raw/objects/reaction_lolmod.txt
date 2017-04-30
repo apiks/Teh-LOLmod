@@ -1,5 +1,7 @@
 reaction_lolmod
 
+[OBJECT:REACTION]
+
 [REACTION:MAKE_ELECTRONIC_COMP]
 	[NAME:make electronic component]
 	[BUILDING:TECH_LAB:LAB:CUSTOM_E]
