@@ -1,7 +1,5 @@
 building_lolmod
 
-[OBJECT:BUILDING]
-
 [BUILDING_WORKSHOP:TECH_LAB]
 	[NAME:Tech Lab]
 	[NAME_COLOR:4:0:1]

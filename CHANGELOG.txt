@@ -1,4 +1,3 @@
-Various bugfixes and modification to creatures - Enemy Post
-Undoed previous patch change to Thread Zombies limbs not being able to be revived - Apiks
-Poison spit - IndigoFenix
-Hellacopter - Pikachu17
+Shill, neckbear, Raw Data Ore - Lord_lemonpie
+Sharks are now everywhere - Enemy post
+Bugfixes and additions for Forumechs and reactions - Enemy Post, Gwolfski
