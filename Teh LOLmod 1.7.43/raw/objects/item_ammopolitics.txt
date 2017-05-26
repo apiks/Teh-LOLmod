@@ -1,0 +1,10 @@
+item_ammopolitics
+
+[OBJECT:ITEM]
+
+[ITEM_AMMO:ITEM_AMMO_DOLLARS]Thanks Gwolfski.
+[NAME:dollar:dollars]
+[CLASS:DOLLARS]
+[SIZE:30]
+[ATTACK:EDGE:5:1000:stab:stabs:NO_SUB:1000]
+	[ATTACK_PREPARE_AND_RECOVER:3:3]
