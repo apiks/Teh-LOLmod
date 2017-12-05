@@ -135,7 +135,7 @@ Victory By [NAME]
 [NAME], My Life
 [NAME], My Love
 [NAME]: A Brief History
-NAME]: A Brief Introduction
+[NAME]: A Brief Introduction
 [NAME]: A New Approach
 [NAME]: A Quandary
 [NAME]: Before and After

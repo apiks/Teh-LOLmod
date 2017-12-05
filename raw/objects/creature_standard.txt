@@ -246,11 +246,11 @@ creature_standard
 	Here, GENERAL_BABY_NAME is at the creature level, and BABYNAME is at the caste level.  These names could be gender-specific but aren't right now.
 
 	[BABY:1]
-	[GENERAL_BABY_NAME:dwarven baby:dwarven babies]
-	[BABYNAME:dwarven baby:dwarven babies]
+	[GENERAL_BABY_NAME:forumite baby:forumite babies]
+	[BABYNAME:forumite baby:forumite babies]
 	[CHILD:12]
-	[GENERAL_CHILD_NAME:dwarven child:dwarven children]
-	[CHILDNAME:dwarven child:dwarven children]
+	[GENERAL_CHILD_NAME:forumite child:forumite children]
+	[CHILDNAME:forumite child:forumite children]
 	[EQUIPS]
 	[CAVE_ADAPT]
 	[DIURNAL]
@@ -259,18 +259,18 @@ creature_standard
 
 	This is the new format for making specific unit names for a creature.  Any unit token can be used.  If you want to add a caste-specific profession name, use CASTE_PROFESSION_NAME instead, once the caste has been declared.
 
-	PROFESSION_NAME:CRAFTSMAN:craftsmite:craftsmites]
-	PROFESSION_NAME:FISHERMAN:fishermite:fishermites]
-	PROFESSION_NAME:HAMMERMAN:hammermite:hammermites]
-	PROFESSION_NAME:SPEARMAN:spearmite:spearmites]
+	[PROFESSION_NAME:CRAFTSMAN:craftsmite:craftsmites]
+	[PROFESSION_NAME:FISHERMAN:fishermite:fishermites]
+	[PROFESSION_NAME:HAMMERMAN:hammermite:hammermites]
+	[PROFESSION_NAME:SPEARMAN:spearmite:spearmites]
 	[PROFESSION_NAME:CROSSBOWMAN:marksmite:marksmites]
-	[PROFESSION_NAME:AXEMAN:axemite:axemites
+	[PROFESSION_NAME:AXEMAN:axemite:axemites]
 	[PROFESSION_NAME:SWORDSMAN:swordsmite:swordsmites]
 	[PROFESSION_NAME:MACEMAN:macemite:macemites]
 	[PROFESSION_NAME:PIKEMAN:pikemite:pikemites]
 	[PROFESSION_NAME:BOWMAN:bowmite:bowmites]
 	[PROFESSION_NAME:MASTER_CROSSBOWMAN:Elite Marksmite:Elite Marksmites]
-	[PROFESSION_NAME:MASTER_BOWMAN:Elite Bowmite:Elite Bowdmites]
+	[PROFESSION_NAME:MASTER_BOWMAN:Elite Bowmite:Elite Bowmites]
 	[SPEECH:dwarf.txt]
 	[HOMEOTHERM:10067]
 	[ALCOHOL_DEPENDENT]
